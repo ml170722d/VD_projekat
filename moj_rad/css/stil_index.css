@@ -1,0 +1,49 @@
+body{
+ 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: red ;
+
+
+   
+}
+
+
+header{
+ 
+}
+.slika_logo img{
+    height: 35px;
+}
+.menu_bar{
+    text-align: right;
+    padding-top: 5px;
+    margin-left: 0px;
+}
+.menu_bar a{
+   display: inline;
+   color: white;
+}
+
+
+main{
+ 
+    padding-top: 10px;
+
+
+}
+main img{
+    height: 300px;
+
+}
+.ter_img{
+    text-align: center;
+}
+
+
+
+footer{
+    bottom: 0px;
+    color:white;
+    text-align: center;
+}
