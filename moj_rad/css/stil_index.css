@@ -1,8 +1,7 @@
 body{
     background-color: yellowgreen !important;
     background-repeat: no-repeat;
-    background-size: cover; 
-    overflow-x: hidden;   
+    background-size: cover;    
 }
 
 main{
@@ -17,4 +16,8 @@ main img{
 
 .ter_img{
     text-align: center;
+}
+
+.row{
+    margin: 0px !important;
 }

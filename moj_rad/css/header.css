@@ -5,6 +5,11 @@
 .language img{
     height: 19px;
     width: 25px;
+    cursor: pointer;
+}
+
+.language{
+    text-align: right;
 }
 
 .menu_bar{

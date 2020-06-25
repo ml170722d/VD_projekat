@@ -3,52 +3,82 @@
 <head>
     <title>POCETNA</title>
     <link rel="stylesheet" href="../css/stil_index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        function init(){
-            $('#header').load('./header.html');
-            $('#footer').load('./footer.html');
-        }
-    </script>
+    
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
-<body onload="init()">
-    <div id="header"></div>
-    <main>
-        <div class="row ter_img">
-            <div class="col-12 col-sm-12 col-md-4">
-                <img src="../images/teretana_slika1.png" alt="" class="rounded">
+<body onload>
+    <div id="container">
+        <header>
+            <div class="row">
+                <div class="col-2 col-sm-2 slika_logo">
+                    <img src="../images/logo.png" alt="logo">
+                </div>
+                <div class="col-8 col-sm-8 menu_bar">
+                    <a class="nav-link " href="./index.html">Pocetna</a>
+                    <a class="nav-link " href="">Usluge</a>
+                    <a class="nav-link " href="">Zakazivanje treninga</a>
+                    <a class="nav-link " href="">Moj nalog</a>
+                    <a class="nav-link " href="">O nama</a>
+                </div>
+                <div class="col-2 col-sm-2 language">
+                    <img src="../images/srb-zastavica.jpg" alt="">
+                    <img src="../images/eng-zastavica.png" alt="">
+                </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4">
-                <img src="../images/teretana_slika2.jpg" alt="" class="rounded">
+        </header>
+        <main>
+            <div class="row ter_img">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <img src="../images/teretana_slika1.png" alt="" class="rounded">
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <img src="../images/teretana_slika2.jpg" alt="" class="rounded">
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <img src="../images/masaza_slika2.jpg" alt="" class="rounded">
+                </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4">
-                <img src="../images/masaza_slika2.jpg" alt="" class="rounded">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Kao pojedinac ste nešto. <br> Kao zajednica smo sve.</h1>
-                <p>Više od 30 različitih grupnih treninga i 120+ termina! <br>
-                    Imamo treninge za sve nivoe fitnesa.</p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Kao pojedinac ste nešto. <br> Kao zajednica smo sve.</h1>
+                    <p>Više od 30 različitih grupnih treninga i 120+ termina! <br>
+                        Imamo treninge za sve nivoe fitnesa.</p>
 
+                </div>
             </div>
-        </div>
-        <div class="row ter_img">
-            <div class="col-12 col-sm-4">
-                <img src="../images/trening_kardio.jpg" alt="" class="rounded">
+            <div class="row ter_img">
+                <div class="col-12 col-sm-4">
+                    <img src="../images/trening_kardio.jpg" alt="" class="rounded">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="../images/trening_ruke.jpg" alt="" class="rounded">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <img src="../images/trening_noge.jpg" alt="" class="rounded">
+                </div>
             </div>
-            <div class="col-12 col-sm-4">
-                <img src="../images/trening_ruke.jpg" alt="" class="rounded">
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        <span class="line">Copyright 2020,&nbsp;</span>
+                        <span class="line">Đorđe Daničić i Luka Matović,&nbsp;</span>
+                        <span class="line">Odsek za softverskoinženjerstvo&nbsp;</span>
+                        <span class="line">Elektrotehničkog fakulteta Univerziteta u Beogradu</span>
+                    </p>
+                </div>
             </div>
-            <div class="col-12 col-sm-4">
-                <img src="../images/trening_noge.jpg" alt="" class="rounded">
-            </div>
-        </div>
-    </main>
-    <div id="footer"></div>
+        </footer>
+    </div>
 </body>
 
 </html>
