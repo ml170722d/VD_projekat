@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="rs">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -23,13 +22,14 @@
     <!-- jQuery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nutricionista.css">
 
+    
     <script src="../js/language.js"></script>
 
-    <title>NonStop Pocetna</title>
+    <title>NonStop Treninzi</title>
 </head>
 
 <body>
@@ -48,17 +48,17 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Pocetna </a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">Pocetna</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Usluge
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="./treninzi.html">Treninzi</a>
-                            <a class="dropdown-item" href="./nutricionista.html">Nutricionista</a>
+                            <a class="dropdown-item active" href="./nutricionista.html">Nutricionista</a>
                             <a class="dropdown-item" href="./masaza.html">Masaze</a>
                         </div>
                     </li>
@@ -76,23 +76,44 @@
 
         </nav>
     </header>
+
     <main>
-        <div class="text">
-            <p>
-                <span>
-                    <h1><b>Fitness centri koji nikad ne spavaju!</b></h1>
-                </span>
-                <span>Non Stop Fitness radi 24 sata svakog dana, 7 dana u nedelji…</span>
-                <span>Da, to znači da radimo i za Božić, Novu Godinu, nikad ne zatvaramo.</span>
-            </p>
-        </div>
-        <div class="media-icon">
-            <a href="https://www.facebook.com/nsfserbia"><img src="../svg/fb-svg.svg" alt=""></a>
-            <a href="https://www.instagram.com/nonstopfitness_serbia/"><img src="../svg/insta-svg.svg" alt=""></a>
-            <a href="https://twitter.com/NonstopFitSav"><img src="../svg/twitter-svg.svg" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCNsw0yEc3zWIheTB0HcpW5A"><img src="../svg/youtube-svg.svg"
-                    alt=""></a>
-        </div>
+        <form id="form">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="name">Ime</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ime" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="surname">Prezime</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Prezime" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputAddress">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="phone">Telefon</label>
+                    <input type="number" class="form-control" id="phone" placeholder="Telefon" minlength="10"
+                        maxlength="13" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="date">Datum</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+            </div>
+
+            <div class="form-group offset-md-4">
+                <button type="submit" class="btn btn-primary" id="confirm">Potvrdi</button>
+            </div>
+
+        </form>
     </main>
 
     <footer>
@@ -107,6 +128,43 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <script src="../js/class.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#date').val(new Date().toDateInputValue());
+        });
+
+        Date.prototype.toDateInputValue = (function () {
+            var local = new Date(this);
+            local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+            return local.toJSON().slice(0, 10);
+        });
+
+        $('#form').submit(function (e) {
+            e.preventDefault();
+
+            formToJSON();
+
+            if (!validate(json)) {
+                alert("You have entered an invalid data!");
+                return;
+            }
+
+            let pdf = new PDF();
+
+            $('input').each(function () {
+                pdf.writeLine($(this).attr('id') + ": " + $(this).val());
+                $(this).val("");
+            });
+            $('#date').val(new Date().toDateInputValue());
+
+            pdf.save('nutricionista-termin.pdf');
+        });
+
+    </script>
+
 </body>
 
 </html>

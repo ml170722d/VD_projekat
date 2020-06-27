@@ -1,9 +1,35 @@
-
-
 main{
     background-image: url(../images/banner_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: calc( 100vh - 83px );
+
+    display: flex;
+    align-items: center;
+
+    color: rgb(0, 89, 255);
 }
 
+.media-icon img{
+    width: 30px;
+}
+
+.media-icon{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    right: 0;
+    margin-right: 15px;
+}
+
+.text{
+    height: 50vh;
+    width: 50vw;
+    padding: 25px;
+    margin-left: 4vw;
+    text-align: center;
+}
+
+.text p{
+    text-align: center;
+}

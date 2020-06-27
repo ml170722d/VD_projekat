@@ -1,0 +1,19 @@
+main{
+    background-image: linear-gradient(to right, #7ae7ff , #7ab8ff);
+
+    height: calc( 100vh - 83px );
+}
+
+.form-row{
+    margin: 0px;
+}
+
+main form{
+    margin: auto;
+}
+
+#invoice{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

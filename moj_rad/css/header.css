@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
     .lang{
         position: absolute;
         right: 0;
@@ -18,7 +18,7 @@
     }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 767px){
     .lang{
         position: absolute;
         right: 0;

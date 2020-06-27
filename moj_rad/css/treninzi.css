@@ -1,0 +1,40 @@
+main{
+    background-image: linear-gradient(to right, #7ae7ff , #7ab8ff);
+}
+
+main ul{
+    list-style-type: none;
+    padding: 40px;
+    margin-bottom: 0px;
+}
+
+main ul li{
+    display: grid;
+    margin: 20px;
+}
+
+.center-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workout-desc{
+    text-align: center;
+}
+
+.center-items img{
+    width: 275px;
+}
+
+@media screen and (min-width: 992px){
+    main ul li{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 991px){
+    main ul li{
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
