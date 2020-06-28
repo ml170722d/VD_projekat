@@ -23,9 +23,19 @@ function getLanguage() {
     $.ajax({
         url: '../js/language/' + localStorage.getItem('language') + '.json',
         dataType: 'json', async: false, dataType: 'json',
-        success: function (lang) { language = lang }
+        success: function (lang) {
+            language = lang;
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Error: " + errorThrown);
+            language = (localStorage.getItem('language') == 'rs') ? hardCodeJsonRS : hardCodeJsonEN;
+        }
     });
 }
+
+//needs to hard coded later as json obj
+var hardCodeJsonEN;
+var hardCodeJsonRS;
 
 function setLanguage(lang) {
     localStorage.setItem('language', lang);
@@ -93,7 +103,7 @@ function translate() {
     getLanguage();
     translateNavBar();
     translateFooter();
-    
+
     //user defined functin
     translatePage(language);
 }

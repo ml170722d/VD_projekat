@@ -123,7 +123,6 @@
             let i = 0;
             $('head').find('title').text(language.head_home);
             $('main').find('span').each(function () {
-                console.log(this, i);
                 switch (i++) {
                     case 0:
                         $(this).find('b').text(language.home_page_title_header);
