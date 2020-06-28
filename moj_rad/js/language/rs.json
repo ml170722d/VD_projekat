@@ -1,3 +1,22 @@
 {
-    
+    "nav_bar_home": "Pocetna",
+    "nav_bar_service_dropdown": "Usluga",
+    "nav_bar_service_item1": "Treninzi",
+    "nav_bar_service_item2": "Nutricionista",
+    "nav_bar_service_item3": "Masaze",
+    "nav_bar_shedule": "Zakazivanje treninga",
+    "nav_bar_my_acc": "Moj nalog",
+    "nav_bar_about_us": "O nama",
+
+    "credentials_1st": "Copyright 2020,",
+    "credentials_2nd": "Đorđe Daničić i Luka Matović,",
+    "credentials_3rd": "Odsek za softverskoinženjerstvo",
+    "credentials_4th": "Elektrotehničkog fakulteta Univerziteta u Beogradu",
+
+
+    "head_home": "NonStop Pocetna",
+    "home_page_title_header": "Fitness centri koji nikad ne spavaju!",
+    "home_page_title_paragraph_1st": "Non Stop Fitness radi 24 sata svakog dana, 7 dana u nedelji…",
+    "home_page_title_paragraph_2nd": "Da, to znači da radimo i za Božić, Novu Godinu, nikad ne zatvaramo."
+
 }

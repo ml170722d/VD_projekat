@@ -1,0 +1,21 @@
+{
+    "nav_bar_home": "Home",
+    "nav_bar_service_dropdown": "Service",
+    "nav_bar_service_item1": "Workout",
+    "nav_bar_service_item2": "Mutritionist",
+    "nav_bar_service_item3": "Massage",
+    "nav_bar_shedule": "Training scheduling",
+    "nav_bar_my_acc": "My account",
+    "nav_bar_about_us": "About us",
+
+    "credentials_1st": "Copyright 2020,",
+    "credentials_2nd": "Đorđe Daničić i Luka Matović,",
+    "credentials_3rd": "Department of Software Engineering",
+    "credentials_4th": "Faculty of Electrical Engineering, University of Belgrade",
+    
+    "head_home": "NonStop Home",
+    "home_page_title_header": "Fitness centers that never sleep!",
+    "home_page_title_paragraph_1st": "Non Stop Fitness works 24 hours a day, 7 days a week…",
+    "home_page_title_paragraph_2nd": "Yes, that means we work and for Christmas, New Year, we never close."
+
+}

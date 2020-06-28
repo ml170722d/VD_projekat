@@ -78,24 +78,25 @@
     </header>
 
     <main>
-        <form id="form">
+        <div class="row">
+        <form id="form" class="col-sm-6">
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="name">Ime</label>
                     <input type="text" class="form-control" id="name" placeholder="Ime" required>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="surname">Prezime</label>
                     <input type="text" class="form-control" id="surname" placeholder="Prezime" required>
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="inputAddress">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="phone">Telefon</label>
                     <input type="number" class="form-control" id="phone" placeholder="Telefon" minlength="10"
                         maxlength="13" required>
@@ -103,17 +104,18 @@
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="date">Datum</label>
                     <input type="date" class="form-control" id="date">
                 </div>
             </div>
 
-            <div class="form-group offset-md-4">
+            <div class="form-group offset-md-5">
                 <button type="submit" class="btn btn-primary" id="confirm">Potvrdi</button>
             </div>
 
         </form>
+    </div>
     </main>
 
     <footer>
