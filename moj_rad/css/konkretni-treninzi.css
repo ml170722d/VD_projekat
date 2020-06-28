@@ -1,0 +1,43 @@
+main .row{
+    margin: 0;
+}
+
+main .center{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .center img{
+    width: 150px;
+}
+
+main .text{
+    margin-top: 20px;
+    text-align: center;
+}
+
+main .content img, .content iframe{
+    margin: auto;
+    
+}
+
+.text p{
+    margin-top: 20px;
+}
+
+main ul{
+    list-style-type: none;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding: 10px;
+}
+
+main li{
+    margin: 20px;
+    border: 2px solid rgba(25, 25, 190, 0.521);
+    border-radius: 25px;
+}
