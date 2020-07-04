@@ -1,6 +1,6 @@
 let media;
 
-function getMedia() {
+function getMedia(selector, numOfSelectorPerArea, pageFor) {
     $.ajax({
         url: '../js/media' + '.json',
         dataType: 'json',
@@ -8,6 +8,7 @@ function getMedia() {
         dataType: 'json',
         success: function (data) {
             media = data;
+            setMediaFor(selector, numOfSelectorPerArea, pageFor);
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             alert("Error: " + errorThrown);
@@ -18,19 +19,22 @@ function getMedia() {
 }
 
 function setMediaFor(selector, numOfSelectorPerArea, pageFor) {
-    waitForEl(selector, function () {
-        let i = 1, j = 1, k = 0;
-        $('main ' + selector).each(function () {
-            $(this).attr('src', mediaJson['training-content-' + pageFor + '-' + j + '-' + selector + '-' + i]);
 
-            (i == 1) ? i = 2 : i = 1;
+    if (media == undefined){
+        getMedia(selector, numOfSelectorPerArea, pageFor);
+    }
 
-            if (k == numOfSelectorPerArea - 1) {
-                k = 0;
-                j++;
-            } else {
-                k++;
-            }
-        });
+    let i = 1, j = 1, k = 0;
+    $('main ' + selector).each(function () {
+        $(this).attr('src', media['training-content-' + pageFor + '-' + j + '-' + selector + '-' + i]);
+
+        (i == 1) ? i = 2 : i = 1;
+
+        if (k == numOfSelectorPerArea - 1) {
+            k = 0;
+            j++;
+        } else {
+            k++;
+        }
     });
 }

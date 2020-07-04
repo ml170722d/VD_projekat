@@ -237,23 +237,3 @@ function otkazi_trening(id){
     //oceni("Jnana Yoga",5);
     window.open("../html/moj_nalog.html", "_self");
 }
-
-
-function oceni(naziv, ocena){
-    let pris = sessionStorage.getItem("Prisustvo");
-    let obj_pris = JSON.parse(pris);
-    for (let i = 0; i<obj_pris.length; i++){
-        if(obj_pris[i].tip==naziv){
-            if(obj_pris[i].ocena==0){
-                obj_pris[i].br_ocena = obj_pris[i].br_ocena + 1; 
-            }else{
-                obj_pris[i].sum_ocena = obj_pris[i].sum_ocena - obj_pris[i].ocena;
-            }
-            obj_pris[i].ocena = ocena;
-            obj_pris[i].sum_ocena = obj_pris[i].sum_ocena + ocena;
-            obj_pris[i].pros_ocena = parseFloat(obj_pris[i].sum_ocena/obj_pris[i].br_ocena); 
-            alert(obj_pris[i].pros_ocena);
-            break;
-        }
-    }
-}

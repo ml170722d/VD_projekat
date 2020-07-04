@@ -1,36 +1,27 @@
 var language;
 
 $().ready(function () {
-    loadHeaderAndFooter();
-
-    waitForEl('header .lang img', function () {
+    //load header and set listeners
+    $('header').load('./header.html', function () {
         setLanguageListeners();
-    });
 
-    waitForEl('header nav', function () {
         translate();
         setCurMaker();
     });
-
+    
+    //load footer
+    $('footer').load('./footer.html');
 });
 
 function setCurMaker() {
     let url = $(location).attr('pathname').split('/');
     let pageName = url[url.length - 1].split('.')[0];
 
-    if(pageName == "treninzi" || pageName == "nutricionista" || pageName == "masaza"){
+    if (pageName == "treninzi" || pageName == "nutricionista" || pageName == "masaza") {
         $('#' + pageName).parent().prev().addClass("active");
     }
 
-    $('#'+pageName).addClass("active");
-    console.log(pageName);
-}
-
-function loadHeaderAndFooter() {
-    //load header
-    $('header').load('./header.html');
-    //load footer
-    $('footer').load('./footer.html');
+    $('#' + pageName).addClass("active");
 }
 
 function setLanguageListeners() {

@@ -56,14 +56,14 @@
     <script src="../js/injectListElem.js"></script>
     <script src="../js/rating.js"></script>
     <script src="../js/getMediaJSON.js"></script>
+    <script src="../js/waitForEl.js"></script>
 
     <script>
         let mediaJson;
         $().ready(function () {
-            mediaJson = getMedia();
-
-            setMediaFor('iframe', 2, 'core');
-            setMediaFor('img', 2, 'core');
+            loadListItems(function (listItem) {
+                
+            });
         });
 
         function translatePage(language) {

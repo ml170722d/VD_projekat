@@ -41,9 +41,15 @@ main{
 .top-vote-container{
     padding: 20px;
     height: 40vh;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .top-vote-container h3{
     text-align: center;
     /*chance title of top vote here*/
 }
+
+

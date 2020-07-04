@@ -43,8 +43,8 @@
 
 
     "head_cardio": "NonStop Cardio",
-    "training-title-cardio-1": "Circuit cardio",
-    "training-title-cardio-2": "HIIT cardio",
+    "training-title-cardio-1": "Circuit Cardio",
+    "training-title-cardio-2": "HIIT Cardio",
     "training-title-cardio-3": "Fartlek",
 
     "training-desc-cardio-1": "Endurance and resistance training using high intensity aerobics.",
@@ -61,9 +61,9 @@
 
 
     "head_core": "NonStop Core",
-    "training-title-core-1": "Isometric core",
-    "training-title-core-2": "Standard core",
-    "training-title-core-3": "Dynamic core",
+    "training-title-core-1": "Isometric Core",
+    "training-title-core-2": "Standing Core",
+    "training-title-core-3": "Dynamic Floor",
 
     "training-desc-core-1": "Workouts that strengthen the torso muscles, especially the lower back and abdominal area.",
     "training-desc-core-2": "Trainings that you will come to only to give us money because all this is possible to do at home without any special equipment.",
@@ -78,10 +78,10 @@
     "training-difficulty-core-3": "Difficulty: 3",
 
 
-    "head_pilates": "NonStop pilates",
-    "training-title-pilates-1": "Klasicni pilates",
-    "training-title-pilates-2": "Stott pilates",
-    "training-title-pilates-3": "Reformer pilates",
+    "head_pilates": "NonStop Pilates",
+    "training-title-pilates-1": "Classic Pilates",
+    "training-title-pilates-2": "Stott Pilates",
+    "training-title-pilates-3": "Reformer Pilates",
 
     "training-desc-pilates-1": "",
     "training-desc-pilates-2": "",
@@ -97,9 +97,9 @@
 
 
     "head_yoga": "NonStop Yoga",
-    "training-title-yoga-1": "Raja yoga",
-    "training-title-yoga-2": "Hatha yoga",
-    "training-title-yoga-3": "Jnana yoga",
+    "training-title-yoga-1": "Raja Yoga",
+    "training-title-yoga-2": "Hatha Yoga",
+    "training-title-yoga-3": "Jnana Yoga",
 
     "training-desc-yoga-1": "",
     "training-desc-yoga-2": "",
@@ -114,7 +114,18 @@
     "training-difficulty-yoga-3": "Difficulty: 1",
 
 
+    "head_aboutUs": "NonStop About us",
+    "head_reserve": "NonStop Reserve",
+    "head_myAcc": "NonStop  My account",
+
+    "aboutUs_tite": "About us",
+    "aboutUs_text": "Some text about who we are and what we do. Non Stop Fitness organizes more than 30 different group workouts in over 120 sessions per week at all locations. All group trainings are included in the regular membership fee, no additional payment is required. Train everything from Yoga to Power Box, from Pilates to Dance Fitness. All trainings are led by professional trainers of Non Stop Fitness with many years of experience in the field of fitness.",
+    "aboutUs_contact_title":"Contact",
     
+    "about_dev_1_p_1":"CEO & Founder",
+    "about_dev_1_p_2":"Third year student of the Faculty of Electrical Engineering in Belgrade, majoring in Software Engineering",
+    "about_dev_2_p_1":"Art Designer",
+    "about_dev_2_p_2":"Third year student of the Faculty of Electrical Engineering in Belgrade, majoring in Software Engineering",
 
     "": ""
 }

@@ -45,8 +45,8 @@
 
 
     "head_cardio": "NonStop Kardio",
-    "training-title-cardio-1": "Kruzni kardio",
-    "training-title-cardio-2": "HIIT kardio",
+    "training-title-cardio-1": "Circuit Cardio",
+    "training-title-cardio-2": "HIIT Cardio",
     "training-title-cardio-3": "Fartlek",
 
     "training-desc-cardio-1": "Treninzi izdrzljivosti i otpornosti koje se koristi aerobik visokog intenziteta.",
@@ -63,9 +63,9 @@
 
 
     "head_core": "NonStop Trup",
-    "training-title-core-1": "Izometrijske vezbe trupa",
-    "training-title-core-2": "Standardne vezbe trupa",
-    "training-title-core-3": "Dinamicke vezbe trupa",
+    "training-title-core-1": "Isometric Core",
+    "training-title-core-2": "Standing Core",
+    "training-title-core-3": "Dynamic Floor",
 
     "training-desc-core-1": "Treninzi koji jacaju misice trupa, posebno donji deo ledja i podrucje trbuha.",
     "training-desc-core-2": "Treninzi na koje cete dolaziti samo da nam date pare jer je sve ovo moguce da radite i kod kuce bez ikakve spacijalne opreme.",
@@ -81,9 +81,9 @@
 
 
     "head_pilates": "NonStop pilates",
-    "training-title-pilates-1": "Klasicni pilates",
-    "training-title-pilates-2": "Stott pilates",
-    "training-title-pilates-3": "Reformer pilates",
+    "training-title-pilates-1": "Classic Pilates",
+    "training-title-pilates-2": "Stott Pilates",
+    "training-title-pilates-3": "Reformer Pilates",
 
     "training-desc-pilates-1": "",
     "training-desc-pilates-2": "",
@@ -99,9 +99,9 @@
 
 
     "head_yoga": "NonStop Yoga",
-    "training-title-yoga-1": "Raja yoga",
-    "training-title-yoga-2": "Hatha yoga",
-    "training-title-yoga-3": "Jnana yoga",
+    "training-title-yoga-1": "Raja Yoga",
+    "training-title-yoga-2": "Hatha Yoga",
+    "training-title-yoga-3": "Jnana Yoga",
 
     "training-desc-yoga-1": "",
     "training-desc-yoga-2": "",
@@ -114,6 +114,20 @@
     "training-difficulty-yoga-1": "Tezina: 1",
     "training-difficulty-yoga-2": "Tezina: 1",
     "training-difficulty-yoga-3": "Tezina: 1",
+
+
+    "head_aboutUs": "NonStop O nama",
+    "head_reserve": "NonStop Rezervacija",
+    "head_myAcc": "NonStop  Moj nalog",
+
+    "aboutUs_tite": "O nama",
+    "aboutUs_text": "Some text about who we are and what we do. Non Stop Fitnes organizuje više od 30 različitih grupnih treninga u preko 120 termina nedeljno na svim lokacijama. Svi grupni treninzi su uključeni u redovnu članarinu, nikakva doplata nije potrebna. Treniraj sve od Joge do Power Box-a, od Pilatesa do Dance Fitness-a. Sve treninge vode stručni treneri Non Stop Fitness-a sa višegodišnjim iskustvom u oblasti fitnesa.",
+    "aboutUs_contact_title":"Kontakt",
+
+    "about_dev_1_p_1":"Sef i Osnivac",
+    "about_dev_1_p_2":"Student treće godine Elektrotehničkog fakulteta u Beogradu, smer Softverski inženjer",
+    "about_dev_2_p_1":"Dizajner",
+    "about_dev_2_p_2":"Student treće godine Elektrotehničkog fakulteta u Beogradu, smer Softverski inženjer",
 
     "": ""
 }
