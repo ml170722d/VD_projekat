@@ -1,43 +1,57 @@
-main .row{
-    margin: 0;
+.item{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-main .center{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.raiting-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-main .center img{
-    width: 150px;
+.content-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-main .text{
-    margin-top: 20px;
-    text-align: center;
-}
-
-main .content img, .content iframe{
-    margin: auto;
-    
-}
-
-.text p{
-    margin-top: 20px;
-}
-
-main ul{
+ul{
+    padding: 0px;
     list-style-type: none;
-    margin-top: -10px;
-    margin-bottom: -10px;
-    padding: 10px;
+    margin: 0px;
 }
 
-main li{
-    margin: 20px;
-    border: 2px solid rgba(25, 25, 190, 0.521);
-    border-radius: 25px;
+textarea, input[type = "button"]{
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.comment-container label{
+    background-color: rgb(48, 182, 235);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea:hover, input[type = "button"]:hover{
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 992px){
+    .item iframe:first-child{
+        margin-bottom: 10px;
+    }
+
+    .item img:first-child{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .rating>label {
+        font-size: 40px;
+    }
+
+    iframe{
+        height: calc(100vw * (3 / 5));
+    }
 }

@@ -15,7 +15,85 @@
     
     "head_home": "NonStop Home",
     "home_page_title_header": "Fitness centers that never sleep!",
-    "home_page_title_paragraph_1st": "Non Stop Fitness works 24 hours a day, 7 days a week…",
-    "home_page_title_paragraph_2nd": "Yes, that means we work and for Christmas, New Year, we never close."
+    "home_page_title_paragraph_line_1": "Non Stop Fitness works 24 hours a day, 7 days a week…",
+    "home_page_title_paragraph_line_2": "Yes, that means we work and for Christmas, New Year, we never close.",
 
+    "button-placeholder": "Post",
+    "textarea-paceholder": "Leave us a comment",
+
+    "head_cardio": "NonStop Cardio",
+    "training-title-cardio-1": "Circuit cardio",
+    "training-title-cardio-2": "HIIT cardio",
+    "training-title-cardio-3": "Fartlek",
+
+    "training-desc-cardio-1": "Endurance and resistance training using high intensity aerobics.",
+    "training-desc-cardio-2": "Aerobic training of short alternating intervals with a small interval of recovery period.",
+    "training-desc-cardio-3": "Athletic endurance training with a variable pace.",
+
+    "training-duration-cardio-1": "Duration: 1h",
+    "training-duration-cardio-2": "Duration: 45min",
+    "training-duration-cardio-3": "Duration: 1h",
+
+    "training-difficulty-cardio-1": "Difficulty: 4",
+    "training-difficulty-cardio-2": "Difficulty: 5",
+    "training-difficulty-cardio-3": "Difficulty: 3",
+
+
+    "head_core": "NonStop Core",
+    "training-title-core-1": "Isometric core",
+    "training-title-core-2": "Standard core",
+    "training-title-core-3": "Dynamic core",
+
+    "training-desc-core-1": "Workouts that strengthen the torso muscles, especially the lower back and abdominal area.",
+    "training-desc-core-2": "Trainings that you will come to only to give us money because all this is possible to do at home without any special equipment.",
+    "training-desc-core-3": "Workouts that will make your abdominal muscles shape and strengthen.",
+
+    "training-duration-core-1": "Duration: 45min",
+    "training-duration-core-2": "Duration: 90min",
+    "training-duration-core-3": "Duration: 30min",
+
+    "training-difficulty-core-1": "Difficulty: 3",
+    "training-difficulty-core-2": "Difficulty: 3",
+    "training-difficulty-core-3": "Difficulty: 3",
+
+
+    "head_pilates": "NonStop pilates",
+    "training-title-pilates-1": "Klasicni pilates",
+    "training-title-pilates-2": "Stott pilates",
+    "training-title-pilates-3": "Reformer pilates",
+
+    "training-desc-pilates-1": "",
+    "training-desc-pilates-2": "",
+    "training-desc-pilates-3": "",
+
+    "training-duration-pilates-1": "Duration: 1h",
+    "training-duration-pilates-2": "Duration: 90min",
+    "training-duration-pilates-3": "Duration: 90min",
+
+    "training-difficulty-pilates-1": "Difficulty: 2",
+    "training-difficulty-pilates-2": "Difficulty: 3",
+    "training-difficulty-pilates-3": "Difficulty: 2",
+
+
+    "head_yoga": "NonStop Yoga",
+    "training-title-yoga-1": "Raja yoga",
+    "training-title-yoga-2": "Hatha yoga",
+    "training-title-yoga-3": "Jnana yoga",
+
+    "training-desc-yoga-1": "",
+    "training-desc-yoga-2": "",
+    "training-desc-yoga-3": "",
+
+    "training-duration-yoga-1": "Duration: 1h",
+    "training-duration-yoga-2": "Duration: 90min",
+    "training-duration-yoga-3": "Duration: 90min",
+
+    "training-difficulty-yoga-1": "Difficulty: 1",
+    "training-difficulty-yoga-2": "Difficulty: 1",
+    "training-difficulty-yoga-3": "Difficulty: 1",
+
+
+    
+
+    "": ""
 }

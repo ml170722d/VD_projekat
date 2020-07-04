@@ -16,7 +16,83 @@
 
     "head_home": "NonStop Pocetna",
     "home_page_title_header": "Fitness centri koji nikad ne spavaju!",
-    "home_page_title_paragraph_1st": "Non Stop Fitness radi 24 sata svakog dana, 7 dana u nedelji…",
-    "home_page_title_paragraph_2nd": "Da, to znači da radimo i za Božić, Novu Godinu, nikad ne zatvaramo."
+    "home_page_title_paragraph_line_1": "Non Stop Fitness radi 24 sata svakog dana, 7 dana u nedelji…",
+    "home_page_title_paragraph_line_2": "Da, to znači da radimo i za Božić, Novu Godinu, nikad ne zatvaramo.",
 
+    "button-placeholder": "Okaci",
+    "textarea-paceholder": "Ostavite nam komentar",
+
+
+    "head_cardio": "NonStop Kardio",
+    "training-title-cardio-1": "Kruzni kardio",
+    "training-title-cardio-2": "HIIT kardio",
+    "training-title-cardio-3": "Fartlek",
+
+    "training-desc-cardio-1": "Treninzi izdrzljivosti i otpornosti koje se koristi aerobik visokog intenziteta.",
+    "training-desc-cardio-2": "Treninzi aerobnih bezbi kratkih naizmenicnih intervala sa malim intervalom perioda oporavka.",
+    "training-desc-cardio-3": "Atletski treninzi izdrzljivosti sa promenljivim tempom.",
+
+    "training-duration-cardio-1": "Trajanje: 1h",
+    "training-duration-cardio-2": "Trajanje: 45min",
+    "training-duration-cardio-3": "Trajanje: 1h",
+
+    "training-difficulty-cardio-1": "Tezina: 4",
+    "training-difficulty-cardio-2": "Tezina: 5",
+    "training-difficulty-cardio-3": "Tezina: 3",
+
+
+    "head_core": "NonStop Trup",
+    "training-title-core-1": "Izometrijske vezbe trupa",
+    "training-title-core-2": "Standardne vezbe trupa",
+    "training-title-core-3": "Dinamicke vezbe trupa",
+
+    "training-desc-core-1": "Treninzi koji jacaju misice trupa, posebno donji deo ledja i podrucje trbuha.",
+    "training-desc-core-2": "Treninzi na koje cete dolaziti samo da nam date pare jer je sve ovo moguce da radite i kod kuce bez ikakve spacijalne opreme.",
+    "training-desc-core-3": "Treninzi koji ce naterati vase trbusne misice da se oblikuju i ojacaju.",
+
+    "training-duration-core-1": "Trajanje: 45min",
+    "training-duration-core-2": "Trajanje: 90min",
+    "training-duration-core-3": "Trajanje: 30min",
+
+    "training-difficulty-core-1": "Tezina: 3",
+    "training-difficulty-core-2": "Tezina: 3",
+    "training-difficulty-core-3": "Tezina: 3",
+
+
+    "head_pilates": "NonStop pilates",
+    "training-title-pilates-1": "Klasicni pilates",
+    "training-title-pilates-2": "Stott pilates",
+    "training-title-pilates-3": "Reformer pilates",
+
+    "training-desc-pilates-1": "",
+    "training-desc-pilates-2": "",
+    "training-desc-pilates-3": "",
+
+    "training-duration-pilates-1": "Trajanje: 1h",
+    "training-duration-pilates-2": "Trajanje: 90min",
+    "training-duration-pilates-3": "Trajanje: 90min",
+
+    "training-difficulty-pilates-1": "Tezina: 2",
+    "training-difficulty-pilates-2": "Tezina: 3",
+    "training-difficulty-pilates-3": "Tezina: 2",
+
+
+    "head_yoga": "NonStop Yoga",
+    "training-title-yoga-1": "Raja yoga",
+    "training-title-yoga-2": "Hatha yoga",
+    "training-title-yoga-3": "Jnana yoga",
+
+    "training-desc-yoga-1": "",
+    "training-desc-yoga-2": "",
+    "training-desc-yoga-3": "",
+
+    "training-duration-yoga-1": "Trajanje: 1h",
+    "training-duration-yoga-2": "Trajanje: 90min",
+    "training-duration-yoga-3": "Trajanje: 90min",
+
+    "training-difficulty-yoga-1": "Tezina: 1",
+    "training-difficulty-yoga-2": "Tezina: 1",
+    "training-difficulty-yoga-3": "Tezina: 1",
+
+    "": ""
 }

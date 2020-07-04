@@ -1,34 +1,57 @@
 var language;
 
-$(document).ready(function () {
-    //rs click listener
-    $('#rs').click(function () {
-        setLanguage('rs');
-        translate();
+$().ready(function () {
+    loadHeaderAndFooter();
 
+    waitForEl('header .lang img', function () {
+        setLanguageListeners();
     });
 
-    //en click listener
-    $('#en').click(function () {
-        setLanguage('en');
+    waitForEl('header nav', function(){
         translate();
-    });
-
-
+    })
 
 });
+
+function loadHeaderAndFooter() {
+    //load header
+    $('header').load('./header.html');
+    //load footer
+    $('footer').load('./footer.html');
+}
+
+function setLanguageListeners() {
+    //rs click listener
+    $('#rs').ready(function () {
+        $('#rs').click(function () {
+            setLanguage('rs');
+            translate();
+
+        });
+    })
+
+    //en click listener
+    $('#en').ready(function () {
+        $("#en").click(function () {
+            setLanguage('en');
+            translate();
+        });
+    })
+}
 
 function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage('rs') : false;
     $.ajax({
         url: '../js/language/' + localStorage.getItem('language') + '.json',
-        dataType: 'json', async: false, dataType: 'json',
+        dataType: 'json', 
+        async: false, 
+        dataType: 'json',
         success: function (lang) {
             language = lang;
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             alert("Error: " + errorThrown);
-            language = (localStorage.getItem('language') == 'rs') ? hardCodeJsonRS : hardCodeJsonEN;
+            //language = (localStorage.getItem('language') == 'rs') ? hardCodeJsonRS : hardCodeJsonEN;
         }
     });
 }

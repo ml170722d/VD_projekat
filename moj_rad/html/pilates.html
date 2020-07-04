@@ -23,230 +23,82 @@
     <!-- jQuery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="../js/waitForEl.js"></script>
     <script src="../js/language.js"></script>
+
+
 
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/main-tag.css">
-    <link rel="stylesheet" href="../css/raiting.css">
+
+    <link rel="stylesheet" href="../css/rating.css">
     <link rel="stylesheet" href="../css/konkretni-treninzi.css">
 
-    <title>NonStop Yoga</title>
+    <title></title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <a class="navbar-brand" href="./index.html">
-                <img src="../images/logo.png" alt="" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="lang">
-                <img src="../images/srb-zastavica.jpg" alt="" id="rs">
-                <img src="../images/eng-zastavica.png" alt="" id="en">
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Pocetna <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Usluge
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="./treninzi.html">Treninzi</a>
-                            <a class="dropdown-item" href="./nutricionista.html">Nutricionista</a>
-                            <a class="dropdown-item" href="./masaza.html">Masaze</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Zakazivanje termina</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Moj nalog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">O nama</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-    </header>
+    <header></header>
 
     <main>
         <ul>
-            <li>
-                <div class="row training">
-                    <div class="col-md-2 center">
-                        <div class="rating">
-                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4 center">
-                        <img src="../images/Raja-yoga.png" alt="">
-                    </div>
-                    <div class="col-md-6 text">
-                        <p id="raja-yoga-text">
-                        <h3>
-                            <span>Stott Pilates</span>
-                        </h3>
-                        <span>
-                            Стотт Пилатес је маркирана верзија Пилатес-ове методе физичког вежбања коју је Моира
-                            Мерритхев (рођена Стотт) развила и комерцијализовала Моира са супругом Линдсаи Мерритхев,
-                            почевши од 1988. Најзначајнија разлика између оригиналне методе Стотт Пилатес-а и Јосепха
-                            Пилатес-а. раних 1900-их је то што се Стотт фокусирао на неутрално држање кичме и створио
-                            другачији редослед вежби.
-                        </span>
-
-                        </p>
-                    </div>
-                    <div class="col-md-12 content ">
-                        <div class="row center">
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                        </div>
-                        <div class="row center">
-                            <img src="../images/raja-yoga-cont1.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                            <img src="../images/raja-yoga-cont2.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                            <img src="../images/raja-yoga-cont3.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="row training">
-                    <div class="col-md-2 center">
-                        <div class="rating">
-                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4 center">
-                        <img src="../images/Raja-yoga.png" alt="">
-                    </div>
-                    <div class="col-md-6 text">
-                        <p id="raja-yoga-text">
-                        <h3>
-                            <span>Classic Pilates</span>
-                        </h3>
-                        <span>
-                            Пилатес се развио у физичкој култури вежбања крајем 19. века како би ублажио лоше здравље.
-                            Међутим, постоје само ограничени докази који подржавају употребу пилатеса за ублажавање
-                            ствари попут болова у доњем делу леђа. Докази из студија показују да, иако Пилатес побољшава
-                            равнотежу, није доказано да је ефикасан третман за било које друго здравствено стање осим
-                            доказа да редовни пилатесови сесији могу да помогну кондиционирање мишића код здравих
-                            одраслих, у поређењу са вежбањем.
-                        </span>
-
-                        </p>
-                    </div>
-                    <div class="col-md-12 content ">
-                        <div class="row center">
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                        </div>
-                        <div class="row center">
-                            <img src="../images/raja-yoga-cont1.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                            <img src="../images/raja-yoga-cont2.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                            <img src="../images/raja-yoga-cont3.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="row training">
-                    <div class="col-md-2 center">
-                        <div class="rating">
-                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4 center">
-                        <img src="../images/Raja-yoga.png" alt="">
-                    </div>
-                    <div class="col-md-6 text">
-                        <p id="raja-yoga-text">
-                        <h3>
-                            <span>Reformer Pilates</span>
-                        </h3>
-                        <span>
-                            Pilates je metoda vežbanja koju je osmislio Joseph Pilates. Sama ideja o reformeru nastala
-                            je za vreme I svetskog rata kada je J.Pilates na bolničke krevete konstuisao manje opruge,
-                            federe i trake pomoću kojih su se ranjenici koji su tada bili vezani za bolničke krevete
-                            brže oporavljali od onih koji su samo mirovali.
-
-                            Prednost vežbanja na reformeru je u simetriji, odnosno jednakom opterećenju leve i desne
-                            strane prilikom vežbanja. Kod većine ljudi statika tela je nejednako razvijena i
-                            asimetrična, a sama podela na levoruke i desnoruke podrazumeva da je jedna strana tela više
-                            razvijena od druge. Redovnim vežbanjem dolazi do većeg stepena simetrije, odnosno jačanja
-                            inače slabije strane tela. Reformer pilates je izmedju ostalog nastao da bi se pokreti koji
-                            se izvode na podlozi (Mat pilates) uprostili, kako bi osoba ojačala i da bi onda pilates na
-                            podlozi bio efikasniji. Specifičnost rada na reformeru i pilates spravama uopšte je što su
-                            treninzi individualni ili su formirane male grupe, gde trener može da se posveti svakom
-                            članu. Na taj način trener koriguje i prati vežbača pa je napredak vrlo brz, a mogućnost
-                            povrede smanjen na minimum.
-                        </span>
-
-                        </p>
-                    </div>
-                    <div class="col-md-12 content ">
-                        <div class="row center">
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                            <iframe src="https://www.youtube.com/embed/afENn1L1_Pk" frameborder="0" allowfullscreen
-                                class="col-md-3 col-sm-12 col-12 video"></iframe>
-                        </div>
-                        <div class="row center">
-                            <img src="../images/raja-yoga-cont1.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                            <img src="../images/raja-yoga-cont2.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                            <img src="../images/raja-yoga-cont3.jpg" alt="" class="col-md-4 col-sm-12 col-12">
-                        </div>
-                    </div>
-                </div>
-            </li>
-
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
+
     </main>
 
-    <footer>
-        <div class="row bg-primary">
-            <div class="col-md-12">
-                <p>
-                    <span class="line">Copyright 2020,&nbsp;</span>
-                    <span class="line">Đorđe Daničić i Luka Matović,&nbsp;</span>
-                    <span class="line">Odsek za softverskoinženjerstvo&nbsp;</span>
-                    <span class="line">Elektrotehničkog fakulteta Univerziteta u Beogradu</span>
-                </p>
-            </div>
-        </div>
-    </footer>
+    <footer></footer>
+
+    <script src="../js/injectListElem.js"></script>
+    <script src="../js/rating.js"></script>
+    <script src="../js/getMediaJSON.js"></script>
+
+    <script>
+        let mediaJson;
+        $().ready(function () {
+            mediaJson = getMedia();
+
+            setMediaFor('iframe', 2, 'pilates');
+            setMediaFor('img', 2, 'pilates');
+        });
+
+        function translatePage(language) {
+            $('head title').text(language.head_pilates);
+
+            let i = 1;
+            $('h3[name$="training-title"]').each(function () {
+                $(this).text(language["training-title-pilates-" + i++]);
+            });
+
+            i = 1;
+            $('span[name$="training-desc"]').each(function () {
+                $(this).text(language["training-desc-pilates-" + i++]);
+            });
+
+            i = 1;
+            $('span[name$="training-duration"]').each(function () {
+                $(this).text(language["training-duration-pilates-" + i++]);
+            });
+
+            i = 1;
+            $('span[name$="training-difficulty"]').each(function () {
+                $(this).text(language["training-difficulty-pilates-" + i++]);
+            });
+
+            $('.item input[type$="button"]').each(function () {
+                $(this).attr('value', language["button-placeholder"]);
+            });
+
+            $('.item textarea').each(function () {
+                $(this).attr('placeholder', language["textarea-paceholder"]);
+            });
+
+        }
+    </script>
 </body>
 
 </html>
