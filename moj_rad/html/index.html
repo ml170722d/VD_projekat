@@ -1,84 +1,96 @@
-<html>
+<!DOCTYPE html>
+<html lang="sr">
 
 <head>
-    <title>POCETNA</title>
-    <link rel="stylesheet" href="../css/stil_index.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bootstraj js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
     <!-- jQuery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+    <script src="../js/waitForEl.js"></script>
+    <script src="../js/language.js"></script>
+
+    <title></title>
 </head>
 
-<body onload>
-    <div id="container">
-        <header>
-            <div class="row">
-                <div class="col-2 col-sm-2 slika_logo">
-                    <img src="../images/logo.png" alt="logo">
-                </div>
-                <div class="col-8 col-sm-8 menu_bar">
-                    <a class="nav-link " href="./index.html">Pocetna</a>
-                    <a class="nav-link " href="">Usluge</a>
-                    <a class="nav-link " href="">Zakazivanje treninga</a>
-                    <a class="nav-link " href="">Moj nalog</a>
-                    <a class="nav-link " href="">O nama</a>
-                </div>
-                <div class="col-2 col-sm-2 language">
-                    <img src="../images/srb-zastavica.jpg" alt="">
-                    <img src="../images/eng-zastavica.png" alt="">
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="row ter_img">
-                <div class="col-12 col-sm-12 col-md-4">
-                    <img src="../images/teretana_slika1.png" alt="" class="rounded">
-                </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                    <img src="../images/teretana_slika2.jpg" alt="" class="rounded">
-                </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                    <img src="../images/masaza_slika2.jpg" alt="" class="rounded">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>Kao pojedinac ste nešto. <br> Kao zajednica smo sve.</h1>
-                    <p>Više od 30 različitih grupnih treninga i 120+ termina! <br>
-                        Imamo treninge za sve nivoe fitnesa.</p>
+<body>
+    <header></header>
 
+    <main>
+        <div class="text row">
+            <h1 class="col-sm-12">
+                <b></b>
+            </h1>
+            <p class="row">
+                <span class="col-sm-12"></span>
+                <span class="col-sm-12"></span>
+            </p>
+        </div>
+
+        <!-- needs to be added later -->
+        <div class="row top-vote-container">
+            <div class=" col-sm-3">
+                <div class="row">
+                    <img src="" alt="" id="top-vote-1" class="col-sm-12">
+                    <h3 class="offset-sm-3 col-sm-6" id="top-vote-1-title"></h3>
                 </div>
             </div>
-            <div class="row ter_img">
-                <div class="col-12 col-sm-4">
-                    <img src="../images/trening_kardio.jpg" alt="" class="rounded">
-                </div>
-                <div class="col-12 col-sm-4">
-                    <img src="../images/trening_ruke.jpg" alt="" class="rounded">
-                </div>
-                <div class="col-12 col-sm-4">
-                    <img src="../images/trening_noge.jpg" alt="" class="rounded">
+            <div class="offset-sm-1 col-sm-4">
+                <div class="row">
+                    <img src="" alt="" id="top-vote-2" class="col-sm-12">
+                    <h3 class="offset-sm-3 col-sm-6" id="top-vote-2-title"></h3>
                 </div>
             </div>
-        </main>
-        <footer>
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>
-                        <span class="line">Copyright 2020,&nbsp;</span>
-                        <span class="line">Đorđe Daničić i Luka Matović,&nbsp;</span>
-                        <span class="line">Odsek za softverskoinženjerstvo&nbsp;</span>
-                        <span class="line">Elektrotehničkog fakulteta Univerziteta u Beogradu</span>
-                    </p>
+            <div class="offset-sm-1 col-sm-3">
+                <div class="row">
+                    <img src="" alt="" id="top-vote-3" class="col-sm-12">
+                    <h3 class="offset-sm-3 col-sm-6" id="top-vote-3-title"></h3>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+
+        <div class="media-icon">
+            <a href="https://www.facebook.com/nsfserbia"><img src="../svg/fb-svg.svg" alt=""></a>
+            <a href="https://www.instagram.com/nonstopfitness_serbia/"><img src="../svg/insta-svg.svg" alt=""></a>
+            <a href="https://twitter.com/NonstopFitSav"><img src="../svg/twitter-svg.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCNsw0yEc3zWIheTB0HcpW5A"><img src="../svg/youtube-svg.svg"
+                    alt=""></a>
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+        function translatePage(language) {
+            $('head title').text(language.head_home);
+            $('.text b').text(language.home_page_title_header);
+            let i = 1;
+            $('main span').each(function () {
+                $(this).text(language["home_page_title_paragraph_line_" + i++]);
+            });
+        }
+    </script>
 </body>
 
 </html>

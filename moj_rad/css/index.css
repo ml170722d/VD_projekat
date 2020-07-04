@@ -1,0 +1,49 @@
+main{
+    background-image: url(../images/banner_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc( 100vh - 83px );
+
+    color: rgb(0, 89, 255);
+}
+
+.media-icon img{
+    width: 30px;
+}
+
+.media-icon{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+    right: 0;
+    margin-right: 15px;
+}
+
+.text{
+    height: 40vh;
+    width: 50vw;
+
+    padding: 10px !important;
+    padding-top: 10vh !important;
+    padding-left: 5vw !important; 
+}
+
+.text span{
+    text-align: left;
+    color: rgb(0, 89, 255);
+}
+
+.text h1{
+    padding: 20px;
+    margin: 0px;
+}
+
+.top-vote-container{
+    padding: 20px;
+    height: 40vh;
+}
+
+.top-vote-container h3{
+    text-align: center;
+    /*chance title of top vote here*/
+}

@@ -5,5 +5,14 @@
 footer{
     bottom: 0px;
     color:white;
+}
+
+.row{
+    margin: 0;
+}
+
+p{
+    color: black;
+    margin: auto;
     text-align: center;
 }

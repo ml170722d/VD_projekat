@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bootstraj js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/treninzi.css">
+
+    <script src="../js/waitForEl.js"></script>
+    <script src="../js/language.js"></script>
+
+    <title>NonStop Treninzi</title>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <ul>
+            <li>
+                <div class="center-items">
+                    <a href="./yoga.html">
+                        <img src="../images/raja-yoga-img-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="workout-desc">
+                    <a href="./yoga.html">
+                        <h3></h3>
+                    </a>
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="center-items">
+                    <a href="./core.html">
+                        <img src="../images/standard-core-img-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="workout-desc">
+                    <a href="./core.html">
+                        <h3></h3>
+                    </a>
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="center-items">
+                    <a href="./pilates.html">
+                        <img src="../images/classic-pilates-img-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="workout-desc">
+                    <a href="./pilates.html">
+                        <h3></h3>
+                    </a>
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div class="center-items">
+                    <a href="./cardio.html">
+                        <img src="../images/HIIT-cardio-img-1.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="workout-desc">
+                    <a href="./cardio.html">
+                        <h3></h3>
+                    </a>
+                    <p></p>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        function translatePage(language){
+            let names = ["yoga", "core", "pilates", "cardio"];
+            for(let i = 0; i < names.length; i++){
+                $('main .workout-desc').each(function(){
+                    $(this).find('h3').text(language['training_page_'+names[i]+'_title']);
+                    $(this).find('p').text(language['training_page_'+names[i]+'_desc']);
+                    i++;
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

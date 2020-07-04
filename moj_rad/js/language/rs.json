@@ -1,0 +1,119 @@
+{
+    "nav_bar_home": "Pocetna",
+    "nav_bar_service_dropdown": "Usluge",
+    "nav_bar_service_item1": "Treninzi",
+    "nav_bar_service_item2": "Nutricionista",
+    "nav_bar_service_item3": "Masaze",
+    "nav_bar_shedule": "Zakazivanje termina",
+    "nav_bar_my_acc": "Moj nalog",
+    "nav_bar_about_us": "O nama",
+
+    "credentials_1st": "Copyright 2020,",
+    "credentials_2nd": "Đorđe Daničić i Luka Matović,",
+    "credentials_3rd": "Odsek za softverskoinženjerstvo",
+    "credentials_4th": "Elektrotehničkog fakulteta Univerziteta u Beogradu",
+
+
+    "head_home": "NonStop Pocetna",
+    "home_page_title_header": "Fitness centri koji nikad ne spavaju!",
+    "home_page_title_paragraph_line_1": "Non Stop Fitness radi 24 sata svakog dana, 7 dana u nedelji…",
+    "home_page_title_paragraph_line_2": "Da, to znači da radimo i za Božić, Novu Godinu, nikad ne zatvaramo.",
+
+    "button-placeholder-item": "Okaci",
+    "textarea-paceholder-item": "Ostavite nam komentar",
+
+
+    "head_massage": "NonStop Masaza",
+    "head_nutritionist": "NonStop Nutricionista",
+    "button_submit_pdf": "Posalji",
+    "input_label_name_pdf": "Ime",
+    "input_label_surname_pdf": "Prezime",
+    "input_label_date_pdf": "Datum",
+    "input_label_email_pdf": "Email",
+    "input_label_phone_pdf": "Telefon",
+    "input_label_problem_pdf": "Kratak opis problema",
+
+
+    "training_page_yoga_title": "Yoga",
+    "training_page_yoga_desc": "Yoga je drevna metoda samorazvoja poreklom iz Indije , koja podrazumeva upotrebu tehnika: fizičkih položaja (Asana), vežbi upravljanja energijom putem disanja (Pranajama), relaksaciono-meditativnih vežbi (Pratjahara), koncentracije (Dharana), meditacije (Dhjana) i samorealizacije (Samadhi).",
+    "training_page_core_title": "Vezbe abdomena",
+    "training_page_core_desc": "Vežbe abdomena su vežbe dizajnirane za jačanje mišića, tetiva i ligamenata abdomena. Te vežbe, zajedno sa vežbama za leđa, su ključna za održavanje trupa tela. Dobro održavan trup (abdominalni i leđni mišići koji okružuju kičmu) je jedan od najboljih načina da se očuva dobro držanje pri starenju i jedna od najboljih odbrana protiv čestih povreda leđa koje uzrokuju bolove.",
+    "training_page_pilates_title": "Pilates",
+    "training_page_pilates_desc": "Pilates je profinjena forma vežbanja koja istovremeno razvija specifičnu mišićnu snagu kao i fleksibilnost mišića i zglobova, cime se postiže optimalna telesna uravnoteženost. Pilates izdužuje i tonizira telo, utiče na elegantnu posturu, oslobađa stresa, doprinosi boljoj samokontroli i većem samopouzdanju.",
+    "training_page_cardio_title": "Kardio",
+    "training_page_cardio_desc": "Aerobna tjelovježba (poznata i kao kardio) je fizička vježba niskog do visokog intenziteta koja se prvenstveno zasniva na procesu aerobne energije koji stvaramo. Odnosi se na upotrebu kiseonika za adekvatno ispunjavanje energetskih potreba tela.",
+
+
+    "head_cardio": "NonStop Kardio",
+    "training-title-cardio-1": "Kruzni kardio",
+    "training-title-cardio-2": "HIIT kardio",
+    "training-title-cardio-3": "Fartlek",
+
+    "training-desc-cardio-1": "Treninzi izdrzljivosti i otpornosti koje se koristi aerobik visokog intenziteta.",
+    "training-desc-cardio-2": "Treninzi aerobnih bezbi kratkih naizmenicnih intervala sa malim intervalom perioda oporavka.",
+    "training-desc-cardio-3": "Atletski treninzi izdrzljivosti sa promenljivim tempom.",
+
+    "training-duration-cardio-1": "Trajanje: 1h",
+    "training-duration-cardio-2": "Trajanje: 45min",
+    "training-duration-cardio-3": "Trajanje: 1h",
+
+    "training-difficulty-cardio-1": "Tezina: 4",
+    "training-difficulty-cardio-2": "Tezina: 5",
+    "training-difficulty-cardio-3": "Tezina: 3",
+
+
+    "head_core": "NonStop Trup",
+    "training-title-core-1": "Izometrijske vezbe trupa",
+    "training-title-core-2": "Standardne vezbe trupa",
+    "training-title-core-3": "Dinamicke vezbe trupa",
+
+    "training-desc-core-1": "Treninzi koji jacaju misice trupa, posebno donji deo ledja i podrucje trbuha.",
+    "training-desc-core-2": "Treninzi na koje cete dolaziti samo da nam date pare jer je sve ovo moguce da radite i kod kuce bez ikakve spacijalne opreme.",
+    "training-desc-core-3": "Treninzi koji ce naterati vase trbusne misice da se oblikuju i ojacaju.",
+
+    "training-duration-core-1": "Trajanje: 45min",
+    "training-duration-core-2": "Trajanje: 90min",
+    "training-duration-core-3": "Trajanje: 30min",
+
+    "training-difficulty-core-1": "Tezina: 3",
+    "training-difficulty-core-2": "Tezina: 3",
+    "training-difficulty-core-3": "Tezina: 3",
+
+
+    "head_pilates": "NonStop pilates",
+    "training-title-pilates-1": "Klasicni pilates",
+    "training-title-pilates-2": "Stott pilates",
+    "training-title-pilates-3": "Reformer pilates",
+
+    "training-desc-pilates-1": "",
+    "training-desc-pilates-2": "",
+    "training-desc-pilates-3": "",
+
+    "training-duration-pilates-1": "Trajanje: 1h",
+    "training-duration-pilates-2": "Trajanje: 90min",
+    "training-duration-pilates-3": "Trajanje: 90min",
+
+    "training-difficulty-pilates-1": "Tezina: 2",
+    "training-difficulty-pilates-2": "Tezina: 3",
+    "training-difficulty-pilates-3": "Tezina: 2",
+
+
+    "head_yoga": "NonStop Yoga",
+    "training-title-yoga-1": "Raja yoga",
+    "training-title-yoga-2": "Hatha yoga",
+    "training-title-yoga-3": "Jnana yoga",
+
+    "training-desc-yoga-1": "",
+    "training-desc-yoga-2": "",
+    "training-desc-yoga-3": "",
+
+    "training-duration-yoga-1": "Trajanje: 1h",
+    "training-duration-yoga-2": "Trajanje: 90min",
+    "training-duration-yoga-3": "Trajanje: 90min",
+
+    "training-difficulty-yoga-1": "Tezina: 1",
+    "training-difficulty-yoga-2": "Tezina: 1",
+    "training-difficulty-yoga-3": "Tezina: 1",
+
+    "": ""
+}

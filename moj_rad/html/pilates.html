@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bootstraj js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="../js/waitForEl.js"></script>
+    <script src="../js/language.js"></script>
+
+
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/main-tag.css">
+
+    <link rel="stylesheet" href="../css/rating.css">
+    <link rel="stylesheet" href="../css/konkretni-treninzi.css">
+
+    <title></title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="../js/injectListElem.js"></script>
+    <script src="../js/rating.js"></script>
+    <script src="../js/getMediaJSON.js"></script>
+
+    <script>
+        let mediaJson;
+        $().ready(function () {
+            mediaJson = getMedia();
+
+            setMediaFor('iframe', 2, 'pilates');
+            setMediaFor('img', 2, 'pilates');
+        });
+
+        function translatePage(language) {
+
+            waitForEl('.item', function () {
+                $('head title').text(language.head_pilates);
+
+                let i = 1;
+                $('h3[name$="training-title"]').each(function () {
+                    $(this).text(language["training-title-pilates-" + i++]);
+                });
+
+                i = 1;
+                $('span[name$="training-desc"]').each(function () {
+                    $(this).text(language["training-desc-pilates-" + i++]);
+                });
+
+                i = 1;
+                $('span[name$="training-duration"]').each(function () {
+                    $(this).text(language["training-duration-pilates-" + i++]);
+                });
+
+                i = 1;
+                $('span[name$="training-difficulty"]').each(function () {
+                    $(this).text(language["training-difficulty-pilates-" + i++]);
+                });
+
+                $('.item input[type$="button"]').each(function () {
+                    $(this).attr('value', language["button-placeholder-item"]);
+                });
+
+                $('.item textarea').each(function () {
+                    $(this).attr('placeholder', language["textarea-paceholder-item"]);
+                });
+            });
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+{
+    "nav_bar_home": "Home",
+    "nav_bar_service_dropdown": "Service",
+    "nav_bar_service_item1": "Workout",
+    "nav_bar_service_item2": "Nutritionist",
+    "nav_bar_service_item3": "Massage",
+    "nav_bar_shedule": "Training scheduling",
+    "nav_bar_my_acc": "My account",
+    "nav_bar_about_us": "About us",
+
+    "credentials_1st": "Copyright 2020,",
+    "credentials_2nd": "Đorđe Daničić i Luka Matović,",
+    "credentials_3rd": "Department of Software Engineering",
+    "credentials_4th": "Faculty of Electrical Engineering, University of Belgrade",
+    
+    "head_home": "NonStop Home",
+    "home_page_title_header": "Fitness centers that never sleep!",
+    "home_page_title_paragraph_line_1": "Non Stop Fitness works 24 hours a day, 7 days a week…",
+    "home_page_title_paragraph_line_2": "Yes, that means we work and for Christmas, New Year, we never close.",
+
+    "button-placeholder-item": "Post",
+    "textarea-paceholder-item": "Leave us a comment",
+
+    "head_massage": "NonStop Massage",
+    "head_nutritionist": "NonStop Nutritionist",
+    "button_submit_pdf": "Send",
+    "input_label_name_pdf": "Name",
+    "input_label_surname_pdf": "Surname",
+    "input_label_date_pdf": "Date",
+    "input_label_email_pdf": "Email",
+    "input_label_phone_pdf": "Phone",
+    "input_label_problem_pdf": "Short description of problem",
+
+
+    "training_page_yoga_title": "Yoga",
+    "training_page_yoga_desc": "Yoga is an ancient method of self-development originating from India, which involves the use of techniques: physical postures (Asana), energy management exercises through breathing (Pranayama), relaxation-meditation exercises (Pratjahara), concentration (Dharana), meditation (Dhyana) and self-realization. ).",
+    "training_page_core_title": "Core",
+    "training_page_core_desc": "Abdominal exercises are exercises designed to strengthen the muscles, tendons and ligaments of the abdomen. These exercises, along with back exercises, are key to maintaining the body's torso. A well-maintained torso (abdominal and back muscles that surround the spine) is one of the best ways to maintain good posture as you age and one of the best defenses against frequent back injuries that cause pain.",
+    "training_page_pilates_title": "Pilates",
+    "training_page_pilates_desc": "Pilates largely avoids high impact, high power output, and heavy muscular and skeletal loading. Pilates largely avoids high impact, high power output, and heavy muscular and skeletal loading. Pilates largely avoids high impact, high power output, and heavy muscular loading. Pilates largely avoids high impact, high power output, and heavy muscular loading.",
+    "training_page_cardio_title": "Cardio",
+    "training_page_cardio_desc": "Aerobic exercise (also known as cardio) is a low to high intensity physical exercise that is primarily based on the process of aerobic energy we create. It refers to the use of oxygen to adequately meet the energy needs of the body.",
+
+
+    "head_cardio": "NonStop Cardio",
+    "training-title-cardio-1": "Circuit cardio",
+    "training-title-cardio-2": "HIIT cardio",
+    "training-title-cardio-3": "Fartlek",
+
+    "training-desc-cardio-1": "Endurance and resistance training using high intensity aerobics.",
+    "training-desc-cardio-2": "Aerobic training of short alternating intervals with a small interval of recovery period.",
+    "training-desc-cardio-3": "Athletic endurance training with a variable pace.",
+
+    "training-duration-cardio-1": "Duration: 1h",
+    "training-duration-cardio-2": "Duration: 45min",
+    "training-duration-cardio-3": "Duration: 1h",
+
+    "training-difficulty-cardio-1": "Difficulty: 4",
+    "training-difficulty-cardio-2": "Difficulty: 5",
+    "training-difficulty-cardio-3": "Difficulty: 3",
+
+
+    "head_core": "NonStop Core",
+    "training-title-core-1": "Isometric core",
+    "training-title-core-2": "Standard core",
+    "training-title-core-3": "Dynamic core",
+
+    "training-desc-core-1": "Workouts that strengthen the torso muscles, especially the lower back and abdominal area.",
+    "training-desc-core-2": "Trainings that you will come to only to give us money because all this is possible to do at home without any special equipment.",
+    "training-desc-core-3": "Workouts that will make your abdominal muscles shape and strengthen.",
+
+    "training-duration-core-1": "Duration: 45min",
+    "training-duration-core-2": "Duration: 90min",
+    "training-duration-core-3": "Duration: 30min",
+
+    "training-difficulty-core-1": "Difficulty: 3",
+    "training-difficulty-core-2": "Difficulty: 3",
+    "training-difficulty-core-3": "Difficulty: 3",
+
+
+    "head_pilates": "NonStop pilates",
+    "training-title-pilates-1": "Klasicni pilates",
+    "training-title-pilates-2": "Stott pilates",
+    "training-title-pilates-3": "Reformer pilates",
+
+    "training-desc-pilates-1": "",
+    "training-desc-pilates-2": "",
+    "training-desc-pilates-3": "",
+
+    "training-duration-pilates-1": "Duration: 1h",
+    "training-duration-pilates-2": "Duration: 90min",
+    "training-duration-pilates-3": "Duration: 90min",
+
+    "training-difficulty-pilates-1": "Difficulty: 2",
+    "training-difficulty-pilates-2": "Difficulty: 3",
+    "training-difficulty-pilates-3": "Difficulty: 2",
+
+
+    "head_yoga": "NonStop Yoga",
+    "training-title-yoga-1": "Raja yoga",
+    "training-title-yoga-2": "Hatha yoga",
+    "training-title-yoga-3": "Jnana yoga",
+
+    "training-desc-yoga-1": "",
+    "training-desc-yoga-2": "",
+    "training-desc-yoga-3": "",
+
+    "training-duration-yoga-1": "Duration: 1h",
+    "training-duration-yoga-2": "Duration: 90min",
+    "training-duration-yoga-3": "Duration: 90min",
+
+    "training-difficulty-yoga-1": "Difficulty: 1",
+    "training-difficulty-yoga-2": "Difficulty: 1",
+    "training-difficulty-yoga-3": "Difficulty: 1",
+
+
+    
+
+    "": ""
+}

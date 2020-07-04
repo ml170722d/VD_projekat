@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="rs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Bootstraj js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nutricionista.css">
+
+
+    <script src="../js/waitForEl.js"></script>
+    <script src="../js/language.js"></script>
+
+    <title>NonStop Treninzi</title>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <div class="row">
+            <form id="form" class="col-md-6">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name"></label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="surname"></label>
+                        <input type="text" class="form-control" id="surname" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress"></label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone"></label>
+                        <input type="number" class="form-control" id="phone" minlength="10"
+                            maxlength="13" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="date"></label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                </div>
+
+                <div class="form-group offset-md-5">
+                    <button type="submit" class="btn btn-primary" id="confirm">Potvrdi</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <script src="../js/class.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#date').val(new Date().toDateInputValue());
+        });
+
+        Date.prototype.toDateInputValue = (function () {
+            var local = new Date(this);
+            local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+            return local.toJSON().slice(0, 10);
+        });
+
+        $('#form').submit(function (e) {
+            e.preventDefault();
+
+            formToJSON();
+
+            if (!validate(json)) {
+                alert("You have entered an invalid data!");
+                return;
+            }
+
+            let pdf = new PDF();
+
+            $('input').each(function () {
+                pdf.writeLine($(this).attr('id') + ": " + $(this).val());
+                $(this).val("");
+            });
+            $('#date').val(new Date().toDateInputValue());
+
+            pdf.save('nutricionista-termin.pdf');
+        });
+
+        function translatePage(language) {
+            $('main input').each(function(){
+                $(this).prev().text(language["input_label_"+$(this).attr('id')+"_pdf"]);
+            });
+            $('main button').text(language.button_submit_pdf);
+        }
+
+    </script>
+
+</body>
+
+</html>
