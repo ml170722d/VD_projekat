@@ -2,7 +2,7 @@
     "nav_bar_home": "Home",
     "nav_bar_service_dropdown": "Service",
     "nav_bar_service_item1": "Workout",
-    "nav_bar_service_item2": "Mutritionist",
+    "nav_bar_service_item2": "Nutritionist",
     "nav_bar_service_item3": "Massage",
     "nav_bar_shedule": "Training scheduling",
     "nav_bar_my_acc": "My account",
@@ -18,8 +18,29 @@
     "home_page_title_paragraph_line_1": "Non Stop Fitness works 24 hours a day, 7 days a week…",
     "home_page_title_paragraph_line_2": "Yes, that means we work and for Christmas, New Year, we never close.",
 
-    "button-placeholder": "Post",
-    "textarea-paceholder": "Leave us a comment",
+    "button-placeholder-item": "Post",
+    "textarea-paceholder-item": "Leave us a comment",
+
+    "head_massage": "NonStop Massage",
+    "head_nutritionist": "NonStop Nutritionist",
+    "button_submit_pdf": "Send",
+    "input_label_name_pdf": "Name",
+    "input_label_surname_pdf": "Surname",
+    "input_label_date_pdf": "Date",
+    "input_label_email_pdf": "Email",
+    "input_label_phone_pdf": "Phone",
+    "input_label_problem_pdf": "Short description of problem",
+
+
+    "training_page_yoga_title": "Yoga",
+    "training_page_yoga_desc": "Yoga is an ancient method of self-development originating from India, which involves the use of techniques: physical postures (Asana), energy management exercises through breathing (Pranayama), relaxation-meditation exercises (Pratjahara), concentration (Dharana), meditation (Dhyana) and self-realization. ).",
+    "training_page_core_title": "Core",
+    "training_page_core_desc": "Abdominal exercises are exercises designed to strengthen the muscles, tendons and ligaments of the abdomen. These exercises, along with back exercises, are key to maintaining the body's torso. A well-maintained torso (abdominal and back muscles that surround the spine) is one of the best ways to maintain good posture as you age and one of the best defenses against frequent back injuries that cause pain.",
+    "training_page_pilates_title": "Pilates",
+    "training_page_pilates_desc": "Pilates largely avoids high impact, high power output, and heavy muscular and skeletal loading. Pilates largely avoids high impact, high power output, and heavy muscular and skeletal loading. Pilates largely avoids high impact, high power output, and heavy muscular loading. Pilates largely avoids high impact, high power output, and heavy muscular loading.",
+    "training_page_cardio_title": "Cardio",
+    "training_page_cardio_desc": "Aerobic exercise (also known as cardio) is a low to high intensity physical exercise that is primarily based on the process of aerobic energy we create. It refers to the use of oxygen to adequately meet the energy needs of the body.",
+
 
     "head_cardio": "NonStop Cardio",
     "training-title-cardio-1": "Circuit cardio",

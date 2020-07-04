@@ -67,34 +67,37 @@
         });
 
         function translatePage(language) {
-            $('head title').text(language.head_yoga);
 
-            let i = 1;
-            $('h3[name$="training-title"]').each(function () {
-                $(this).text(language["training-title-yoga-" + i++]);
-            });
+            waitForEl('.item', function () {
+                $('head title').text(language.head_yoga);
 
-            i = 1;
-            $('span[name$="training-desc"]').each(function () {
-                $(this).text(language["training-desc-yoga-" + i++]);
-            });
+                let i = 1;
+                $('h3[name$="training-title"]').each(function () {
+                    $(this).text(language["training-title-yoga-" + i++]);
+                });
 
-            i = 1;
-            $('span[name$="training-duration"]').each(function () {
-                $(this).text(language["training-duration-yoga-" + i++]);
-            });
+                i = 1;
+                $('span[name$="training-desc"]').each(function () {
+                    $(this).text(language["training-desc-yoga-" + i++]);
+                });
 
-            i = 1;
-            $('span[name$="training-difficulty"]').each(function () {
-                $(this).text(language["training-difficulty-yoga-" + i++]);
-            });
+                i = 1;
+                $('span[name$="training-duration"]').each(function () {
+                    $(this).text(language["training-duration-yoga-" + i++]);
+                });
 
-            $('.item input[type$="button"]').each(function () {
-                $(this).attr('value', language["button-placeholder"]);
-            });
+                i = 1;
+                $('span[name$="training-difficulty"]').each(function () {
+                    $(this).text(language["training-difficulty-yoga-" + i++]);
+                });
 
-            $('.item textarea').each(function () {
-                $(this).attr('placeholder', language["textarea-paceholder"]);
+                $('.item input[type$="button"]').each(function () {
+                    $(this).attr('value', language["button-placeholder-item"]);
+                });
+
+                $('.item textarea').each(function () {
+                    $(this).attr('placeholder', language["textarea-paceholder-item"]);
+                });
             });
 
         }

@@ -67,34 +67,37 @@
         });
 
         function translatePage(language) {
-            $('head title').text(language.head_pilates);
 
-            let i = 1;
-            $('h3[name$="training-title"]').each(function () {
-                $(this).text(language["training-title-pilates-" + i++]);
-            });
+            waitForEl('.item', function () {
+                $('head title').text(language.head_pilates);
 
-            i = 1;
-            $('span[name$="training-desc"]').each(function () {
-                $(this).text(language["training-desc-pilates-" + i++]);
-            });
+                let i = 1;
+                $('h3[name$="training-title"]').each(function () {
+                    $(this).text(language["training-title-pilates-" + i++]);
+                });
 
-            i = 1;
-            $('span[name$="training-duration"]').each(function () {
-                $(this).text(language["training-duration-pilates-" + i++]);
-            });
+                i = 1;
+                $('span[name$="training-desc"]').each(function () {
+                    $(this).text(language["training-desc-pilates-" + i++]);
+                });
 
-            i = 1;
-            $('span[name$="training-difficulty"]').each(function () {
-                $(this).text(language["training-difficulty-pilates-" + i++]);
-            });
+                i = 1;
+                $('span[name$="training-duration"]').each(function () {
+                    $(this).text(language["training-duration-pilates-" + i++]);
+                });
 
-            $('.item input[type$="button"]').each(function () {
-                $(this).attr('value', language["button-placeholder"]);
-            });
+                i = 1;
+                $('span[name$="training-difficulty"]').each(function () {
+                    $(this).text(language["training-difficulty-pilates-" + i++]);
+                });
 
-            $('.item textarea').each(function () {
-                $(this).attr('placeholder', language["textarea-paceholder"]);
+                $('.item input[type$="button"]').each(function () {
+                    $(this).attr('value', language["button-placeholder-item"]);
+                });
+
+                $('.item textarea').each(function () {
+                    $(this).attr('placeholder', language["textarea-paceholder-item"]);
+                });
             });
 
         }

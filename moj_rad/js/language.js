@@ -7,11 +7,24 @@ $().ready(function () {
         setLanguageListeners();
     });
 
-    waitForEl('header nav', function(){
+    waitForEl('header nav', function () {
         translate();
-    })
+        setCurMaker();
+    });
 
 });
+
+function setCurMaker() {
+    let url = $(location).attr('pathname').split('/');
+    let pageName = url[url.length - 1].split('.')[0];
+
+    if(pageName == "treninzi" || pageName == "nutricionista" || pageName == "masaza"){
+        $('#' + pageName).parent().prev().addClass("active");
+    }
+
+    $('#'+pageName).addClass("active");
+    console.log(pageName);
+}
 
 function loadHeaderAndFooter() {
     //load header
@@ -43,8 +56,8 @@ function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage('rs') : false;
     $.ajax({
         url: '../js/language/' + localStorage.getItem('language') + '.json',
-        dataType: 'json', 
-        async: false, 
+        dataType: 'json',
+        async: false,
         dataType: 'json',
         success: function (lang) {
             language = lang;

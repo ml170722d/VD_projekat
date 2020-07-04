@@ -19,8 +19,29 @@
     "home_page_title_paragraph_line_1": "Non Stop Fitness radi 24 sata svakog dana, 7 dana u nedelji…",
     "home_page_title_paragraph_line_2": "Da, to znači da radimo i za Božić, Novu Godinu, nikad ne zatvaramo.",
 
-    "button-placeholder": "Okaci",
-    "textarea-paceholder": "Ostavite nam komentar",
+    "button-placeholder-item": "Okaci",
+    "textarea-paceholder-item": "Ostavite nam komentar",
+
+
+    "head_massage": "NonStop Masaza",
+    "head_nutritionist": "NonStop Nutricionista",
+    "button_submit_pdf": "Posalji",
+    "input_label_name_pdf": "Ime",
+    "input_label_surname_pdf": "Prezime",
+    "input_label_date_pdf": "Datum",
+    "input_label_email_pdf": "Email",
+    "input_label_phone_pdf": "Telefon",
+    "input_label_problem_pdf": "Kratak opis problema",
+
+
+    "training_page_yoga_title": "Yoga",
+    "training_page_yoga_desc": "Yoga je drevna metoda samorazvoja poreklom iz Indije , koja podrazumeva upotrebu tehnika: fizičkih položaja (Asana), vežbi upravljanja energijom putem disanja (Pranajama), relaksaciono-meditativnih vežbi (Pratjahara), koncentracije (Dharana), meditacije (Dhjana) i samorealizacije (Samadhi).",
+    "training_page_core_title": "Vezbe abdomena",
+    "training_page_core_desc": "Vežbe abdomena su vežbe dizajnirane za jačanje mišića, tetiva i ligamenata abdomena. Te vežbe, zajedno sa vežbama za leđa, su ključna za održavanje trupa tela. Dobro održavan trup (abdominalni i leđni mišići koji okružuju kičmu) je jedan od najboljih načina da se očuva dobro držanje pri starenju i jedna od najboljih odbrana protiv čestih povreda leđa koje uzrokuju bolove.",
+    "training_page_pilates_title": "Pilates",
+    "training_page_pilates_desc": "Pilates je profinjena forma vežbanja koja istovremeno razvija specifičnu mišićnu snagu kao i fleksibilnost mišića i zglobova, cime se postiže optimalna telesna uravnoteženost. Pilates izdužuje i tonizira telo, utiče na elegantnu posturu, oslobađa stresa, doprinosi boljoj samokontroli i većem samopouzdanju.",
+    "training_page_cardio_title": "Kardio",
+    "training_page_cardio_desc": "Aerobna tjelovježba (poznata i kao kardio) je fizička vježba niskog do visokog intenziteta koja se prvenstveno zasniva na procesu aerobne energije koji stvaramo. Odnosi se na upotrebu kiseonika za adekvatno ispunjavanje energetskih potreba tela.",
 
 
     "head_cardio": "NonStop Kardio",

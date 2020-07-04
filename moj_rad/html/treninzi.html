@@ -46,12 +46,9 @@
                 </div>
                 <div class="workout-desc">
                     <a href="./yoga.html">
-                        <h3>Yoga</h3>
+                        <h3></h3>
                     </a>
-                    <p>Yoga je drevna metoda samorazvoja poreklom iz Indije , koja
-                        podrazumeva upotrebu tehnika: fizičkih položaja (Asana), vežbi upravljanja energijom
-                        putem disanja (Pranajama), relaksaciono-meditativnih vežbi (Pratjahara), koncentracije
-                        (Dharana), meditacije (Dhjana) i samorealizacije (Samadhi).</p>
+                    <p></p>
                 </div>
             </li>
             <li>
@@ -62,13 +59,9 @@
                 </div>
                 <div class="workout-desc">
                     <a href="./core.html">
-                        <h3>Vežbe abdomena</h3>
+                        <h3></h3>
                     </a>
-                    <p>Vežbe abdomena su vežbe dizajnirane za jačanje mišića, tetiva i ligamenata abdomena. Te vežbe,
-                        zajedno sa vežbama za leđa, su ključna za održavanje trupa tela. Dobro održavan trup
-                        (abdominalni i leđni mišići koji okružuju kičmu) je jedan od najboljih načina da se očuva dobro
-                        držanje pri starenju i jedna od najboljih odbrana protiv čestih povreda leđa koje uzrokuju
-                        bolove.</p>
+                    <p></p>
                 </div>
             </li>
             <li>
@@ -79,13 +72,9 @@
                 </div>
                 <div class="workout-desc">
                     <a href="./pilates.html">
-                        <h3>Pilates</h3>
+                        <h3></h3>
                     </a>
-                    <p>Pilates je profinjena forma vežbanja koja istovremeno razvija specifičnu mišićnu snagu kao i
-                        fleksibilnost mišića i zglobova, cime se postiže optimalna telesna uravnoteženost.
-
-                        Pilates izdužuje i tonizira telo, utiče na elegantnu posturu, oslobađa stresa, doprinosi boljoj
-                        samokontroli i većem samopouzdanju.</p>
+                    <p></p>
                 </div>
             </li>
             <li>
@@ -96,11 +85,9 @@
                 </div>
                 <div class="workout-desc">
                     <a href="./cardio.html">
-                        <h3>Kardio</h3>
+                        <h3></h3>
                     </a>
-                    <p>Aerobna tjelovježba (poznata i kao kardio) je fizička vježba niskog do visokog intenziteta
-                        koja se prvenstveno zasniva na procesu aerobne energije koji stvaramo. Odnosi se na upotrebu
-                        kiseonika za adekvatno ispunjavanje energetskih potreba tela.</p>
+                    <p></p>
                 </div>
             </li>
         </ul>
@@ -110,7 +97,14 @@
 
     <script>
         function translatePage(language){
-
+            let names = ["yoga", "core", "pilates", "cardio"];
+            for(let i = 0; i < names.length; i++){
+                $('main .workout-desc').each(function(){
+                    $(this).find('h3').text(language['training_page_'+names[i]+'_title']);
+                    $(this).find('p').text(language['training_page_'+names[i]+'_desc']);
+                    i++;
+                });
+            }
         }
     </script>
 </body>
