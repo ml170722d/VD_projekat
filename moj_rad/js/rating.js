@@ -10,7 +10,7 @@ $(document).ready(function () {
         });
     });
 
-    waitForEl('div[name$="stars"] .rating', function () {
+    waitForEl('div[name$="stars"] input', function () {
 
         /**
          * bounds all labels to the corect input
