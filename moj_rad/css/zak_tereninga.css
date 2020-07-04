@@ -1,0 +1,63 @@
+
+#treninzi{
+    display : flex;
+    align-items : center;
+    justify-content: center;
+}
+
+#treninzi td{
+    width: 33%;
+    border: 10px solid transparent;
+    text-align: center;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#col_1{
+    background-image: url("../images/raja_yoga1.jpg");
+}
+#col_2{
+    background-image: url("../images/hatha_yoga2.jpg");
+}
+#col_3{
+    background-image: url("../images/jnana_yoga1.jpg");
+}
+
+#tabletime .btn1{
+    vertical-align: top;
+}
+#tabletime .btn2{
+    vertical-align: bottom;
+}
+
+#tabletime{
+    text-align: center;
+    vertical-align: middle;
+    height: 700px;
+}
+
+#tabletime td{
+    width: 12.5%;
+}
+#tabletime tr{
+    width: 100px;
+}
+
+#naziv_treninga{
+    text-align: center;
+    border: 2px solid black;
+}
+
+#col_rezervisani_treninzi{
+    width: 500px;
+}
+
+#rezervisani_treninzi table{
+    width: 100%;
+    border: 2px solid black;
+    background-color: white;
+}   
+
+#rezervisani_treninzi table td{
+    text-align: center;
+}
