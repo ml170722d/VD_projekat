@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../css/nutricionista.css">
 
 
-    <script src="../js/waitForEl.js"></script>
+    
     <script src="../js/language.js"></script>
 
     <title>NonStop Treninzi</title>
@@ -84,6 +84,10 @@
     <script>
         $(document).ready(function () {
             $('#date').val(new Date().toDateInputValue());
+        });
+
+        $().ready(function () {
+            getHeaderAndFooter();
         });
 
         Date.prototype.toDateInputValue = (function () {

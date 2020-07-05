@@ -116,7 +116,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
 
-    <script src="../js/waitForEl.js"></script>
+    
     <script src="../js/language.js"></script>
 
     <title></title>
@@ -127,8 +127,8 @@
     <div id="container">
         <header></header>
         <main>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <div class="row">
                 <div id="tip_treninga" class="col-sm-12 col-md-4">
 
@@ -148,8 +148,8 @@
                     <table width="100%">
                         <tr height="150px">
                             <td id="col_1">
-                                <button id="btn_col_1" class="btn btn-outline-light btn-block" 
-                                    onclick="clk_col1()">Raja Yoga</button>
+                                <button id="btn_col_1" class="btn btn-outline-light btn-block" onclick="clk_col1()">Raja
+                                    Yoga</button>
                             </td>
                             <td id="col_2">
                                 <button id="btn_col_2" class="btn btn-outline-light btn-block"
@@ -168,7 +168,12 @@
     </div>
 
     <script>
-        function translatePage(language){
+
+        $().ready(function () {
+            getHeaderAndFooter();
+        });
+
+        function translatePage(language) {
             $('head title').text(language.trainingScheduling_title);
         }
     </script>

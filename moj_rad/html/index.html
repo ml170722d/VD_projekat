@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
 
-    <script src="../js/waitForEl.js"></script>
+    
     <script src="../js/language.js"></script>
 
     <title></title>
@@ -115,6 +115,10 @@
                 $(this).text(language["home_page_title_paragraph_line_" + i++]);
             });
         }
+
+        $().ready(function () {
+            getHeaderAndFooter();
+        });
 
         $().ready(function () {
             let pris = sessionStorage.getItem("Prisustvo");
