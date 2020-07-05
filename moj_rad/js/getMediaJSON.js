@@ -1,6 +1,6 @@
 let media;
 
-function getMedia(selector, numOfSelectorPerArea, pageFor) {
+function getMedia(callback) {
     $.ajax({
         url: '../js/media' + '.json',
         dataType: 'json',
@@ -8,7 +8,7 @@ function getMedia(selector, numOfSelectorPerArea, pageFor) {
         dataType: 'json',
         success: function (data) {
             media = data;
-            setMediaFor(selector, numOfSelectorPerArea, pageFor);
+            callback();
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             alert("Error: " + errorThrown);
@@ -18,23 +18,30 @@ function getMedia(selector, numOfSelectorPerArea, pageFor) {
     return media;
 }
 
-function setMediaFor(selector, numOfSelectorPerArea, pageFor) {
+function setMediaFor(parent) {
 
-    if (media == undefined){
-        getMedia(selector, numOfSelectorPerArea, pageFor);
+    if (media == undefined) {
+        getMedia(function () {
+            setLinks(parent);
+        });
+    } else {
+        setLinks(parent);
     }
 
-    let i = 1, j = 1, k = 0;
-    $('main ' + selector).each(function () {
-        $(this).attr('src', media['training-content-' + pageFor + '-' + j + '-' + selector + '-' + i]);
+}
 
-        (i == 1) ? i = 2 : i = 1;
+let link = 1;
+function setLinks(parent) {
+    let num = 1;
+    let url = $(location).attr('pathname').split('/');
+    let pageName = url[url.length - 1].split('.')[0];
+    let pageFor = pageName;
 
-        if (k == numOfSelectorPerArea - 1) {
-            k = 0;
-            j++;
-        } else {
-            k++;
-        }
+    num = 1;
+    console.log(num);
+    $(parent).find('iframe').each(function(){
+        $(this).attr('src', media['training-content-' + pageFor + '-' + link + '-iframe-' + num]);
+        num = num % 2 + 1;
     });
+    link++;
 }

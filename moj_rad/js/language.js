@@ -1,17 +1,18 @@
 var language;
 
-$().ready(function () {
+function getHeaderAndFooter(callback) {
     //load header and set listeners
     $('header').load('./header.html', function () {
         setLanguageListeners();
-
-        translate();
         setCurMaker();
     });
     
     //load footer
-    $('footer').load('./footer.html');
-});
+    $('footer').load('./footer.html', function(){
+        translate();
+        callback();
+    });
+};
 
 function setCurMaker() {
     let url = $(location).attr('pathname').split('/');

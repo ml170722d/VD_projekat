@@ -1,12 +1,12 @@
 /**
  * injects to every div named "stars" stars.html
  */
-function insertStarsToItem(sratContainer){
-    $(sratContainer).load("./stars.html", function () {
+function insertStarsToItem(starContainer, callback){
+    $(starContainer).load("./stars.html", function () {
 
-        bindLabelToInput(sratContainer);
+        bindLabelToInput(starContainer);
 
-        $(sratContainer).children().each(function () {
+        $(starContainer).children().each(function () {
             $(this).find('input').each(function () {
                 $(this).click(function (e) {
 
@@ -16,15 +16,17 @@ function insertStarsToItem(sratContainer){
             });
         });
 
-        let pris = sessionStorage.getItem("Prisustvo");
+        /*let pris = sessionStorage.getItem("Prisustvo");
         let obj_pris = JSON.parse(pris);
 
         for (let i = 0; i < obj_pris.length; i++) {
-            if (obj_pris[i].tip == $(sratContainer).prev().find('h3').text()) {
-                $(sratContainer).next().find('span').text(obj_pris[i].pros_ocena);
+            if (obj_pris[i].tip == $(starContainer).prev().find('h3').text()) {
+                $(starContainer).next().find('span').text(obj_pris[i].pros_ocena);
                 break;
             }
-        }
+        }*/
+
+        callback();
     });
 }
 
