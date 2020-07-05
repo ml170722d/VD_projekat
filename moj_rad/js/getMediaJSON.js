@@ -38,9 +38,16 @@ function setLinks(parent) {
     let pageFor = pageName;
 
     num = 1;
-    console.log(num);
-    $(parent).find('iframe').each(function(){
+    //console.log(num);
+    $(parent).find('iframe').each(function () {
         $(this).attr('src', media['training-content-' + pageFor + '-' + link + '-iframe-' + num]);
+        num = num % 2 + 1;
+    });
+
+    num = 1;
+    //console.log(num);
+    $(parent).find('img').each(function () {
+        $(this).attr('src', media['training-content-' + pageFor + '-' + link + '-img-' + num]);
         num = num % 2 + 1;
     });
     link++;

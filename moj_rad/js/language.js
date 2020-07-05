@@ -10,7 +10,9 @@ function getHeaderAndFooter(callback) {
     //load footer
     $('footer').load('./footer.html', function(){
         translate();
-        callback();
+        if(callback != undefined){
+            callback();
+        }
     });
 };
 

@@ -28,9 +28,10 @@ function loadListItems(callback) {
                     $(this).attr("id", "comment-container-" + i++);
                 });
 
-                setMediaFor(this);
+                
                 callback();
             });
+            setMediaFor(this);
         });
     });
 
