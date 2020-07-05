@@ -168,6 +168,7 @@
 
         function translatePage(language) {
             $('head title').text(language.trainingScheduling_title);
+
             $('.Pon').text(language.training_table_monday);
             $('.Uto').text(language.training_table_tuesday);
             $('.Sre').text(language.training_table_wednesday);
@@ -177,6 +178,7 @@
             $('.Ned').text(language.training_table_sunday);
             
             $('td button').each(function(){
+
                 let temp = $(this).text().split(' ')[1];
                 $(this).text(language.btn_reserve + " " + temp);
             });
