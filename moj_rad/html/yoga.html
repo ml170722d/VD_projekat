@@ -56,50 +56,67 @@
     <script src="../js/injectListElem.js"></script>
     <script src="../js/rating.js"></script>
     <script src="../js/getMediaJSON.js"></script>
-    <script src="../js/waitForEl.js"></script>
-
+    
     <script>
-        let mediaJson;
         $().ready(function () {
-            loadListItems(function (listItem) {
-                
+            let i = 0;
+            loadListItems(function () {
+                i++;
+                if (i == $('main li').length) {
+                    getHeaderAndFooter(function () {
+
+                        $('main li').each(function () {
+                            let pris = sessionStorage.getItem("Prisustvo");
+                            let obj_pris = JSON.parse(pris);
+
+                            for (let i = 0; i < obj_pris.length; i++) {
+                                if (obj_pris[i].tip == $(this).find('div[name$="stars"]').prev().find('h3').text()) {
+                                    $(this).find('div[name$="stars"]').next().find('span').text(obj_pris[i].pros_ocena);
+                                    $(this).find('div[name$="stars"]').find('input').each(function () {
+                                        if ($(this).attr('value') == obj_pris[i].ocena && obj_pris[i].ocena != 0) {
+                                            $(this).prop('checked', true);
+                                        }
+                                    });
+                                    break;
+                                }
+                            }
+                        });
+
+                    });
+                }
             });
         });
 
         function translatePage(language) {
+            $('head title').text(language.head_yoga);
 
-            waitForEl('.item', function () {
-                $('head title').text(language.head_yoga);
-
-                let i = 1;
-                $('h3[name$="training-title"]').each(function () {
-                    $(this).text(language["training-title-yoga-" + i++]);
-                });
-
-                i = 1;
-                $('span[name$="training-desc"]').each(function () {
-                    $(this).text(language["training-desc-yoga-" + i++]);
-                });
-
-                i = 1;
-                $('span[name$="training-duration"]').each(function () {
-                    $(this).text(language["training-duration-yoga-" + i++]);
-                });
-
-                i = 1;
-                $('span[name$="training-difficulty"]').each(function () {
-                    $(this).text(language["training-difficulty-yoga-" + i++]);
-                });
-
-                $('.item input[type$="button"]').each(function () {
-                    $(this).attr('value', language["button-placeholder-item"]);
-                });
-
-                $('.item textarea').each(function () {
-                    $(this).attr('placeholder', language["textarea-paceholder-item"]);
-                });
+            let i = 1;
+            $('h3[name$="training-title"]').each(function () {
+                $(this).text(language["training-title-yoga-" + i++]);
             });
 
+            i = 1;
+            $('span[name$="training-desc"]').each(function () {
+                $(this).text(language["training-desc-yoga-" + i++]);
+            });
+
+            i = 1;
+            $('span[name$="training-duration"]').each(function () {
+                $(this).text(language["training-duration-yoga-" + i++]);
+            });
+
+            i = 1;
+            $('span[name$="training-difficulty"]').each(function () {
+                $(this).text(language["training-difficulty-yoga-" + i++]);
+            });
+
+            $('.item input[type$="button"]').each(function () {
+                $(this).attr('value', language["button-placeholder-item"]);
+            });
+
+            $('.item textarea').each(function () {
+                $(this).attr('placeholder', language["textarea-paceholder-item"]);
+            });
         }
     </script>
 </body>

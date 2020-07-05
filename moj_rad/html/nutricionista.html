@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../css/nutricionista.css">
 
 
-    <script src="../js/waitForEl.js"></script>
+
     <script src="../js/language.js"></script>
 
     <title>NonStop Treninzi</title>
@@ -57,8 +57,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="phone"></label>
-                        <input type="number" class="form-control" id="phone" minlength="10"
-                            maxlength="13" required>
+                        <input type="number" class="form-control" id="phone" minlength="10" maxlength="13" required>
                     </div>
                 </div>
 
@@ -70,7 +69,7 @@
                 </div>
 
                 <div class="form-group offset-md-5">
-                    <button type="submit" class="btn btn-primary" id="confirm">Potvrdi</button>
+                    <button type="button" class="btn btn-primary" id="confirm" onclick="sub()"></button>
                 </div>
 
             </form>
@@ -86,6 +85,10 @@
             $('#date').val(new Date().toDateInputValue());
         });
 
+        $().ready(function () {
+            getHeaderAndFooter();
+        });
+
         Date.prototype.toDateInputValue = (function () {
             var local = new Date(this);
             local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
@@ -93,12 +96,29 @@
         });
 
         $('#form').submit(function (e) {
-            e.preventDefault();
+            alert('a');
+            sub();
+        });
 
-            formToJSON();
+        function validateEmail(mail) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+                return (true);
+            }
+            alert("You have entered an invalid email address!");
+            return (false);
+        }
 
-            if (!validate(json)) {
-                alert("You have entered an invalid data!");
+        function sub() {
+
+            let json = {
+                name: $('#name').val(),
+                surname: $('#surname').val(),
+                email: $('#email').val(),
+                phone: $('#phone').val(),
+                date: $('#date').val()
+            };
+
+            if (!validateEmail(json.email)) {
                 return;
             }
 
@@ -111,11 +131,11 @@
             $('#date').val(new Date().toDateInputValue());
 
             pdf.save('nutricionista-termin.pdf');
-        });
+        };
 
         function translatePage(language) {
-            $('main input').each(function(){
-                $(this).prev().text(language["input_label_"+$(this).attr('id')+"_pdf"]);
+            $('main input').each(function () {
+                $(this).prev().text(language["input_label_" + $(this).attr('id') + "_pdf"]);
             });
             $('main button').text(language.button_submit_pdf);
         }

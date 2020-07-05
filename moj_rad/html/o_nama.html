@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/header.css">
 
-  <script src="../js/waitForEl.js"></script>
+  
   <script src="../js/language.js"></script>
 
 </head>
@@ -86,9 +86,12 @@
   </div>
 
   <script>
+    $().ready(function () {
+      getHeaderAndFooter();
+    });
     function translatePage(language) {
       $('head title').text(language.head_aboutUs);
-      $('main .about-section').each(function(){
+      $('main .about-section').each(function () {
         $(this).find('h1').text(language.aboutUs_tite);
         $(this).find('#txt1').text(language.aboutUs_text);
         $(this).find('#txt2').text(language.aboutUs_text2);
@@ -96,9 +99,9 @@
       });
       $('#naslov_nas_tim').text(language.about_our_team);
       let i = 1;
-      $('.card').each(function(){
-        $(this).find('.title').text(language['about_dev_'+i+'_p_1']);
-        $(this).find('.title').next().text(language['about_dev_'+i+'_p_2']);
+      $('.card').each(function () {
+        $(this).find('.title').text(language['about_dev_' + i + '_p_1']);
+        $(this).find('.title').next().text(language['about_dev_' + i + '_p_2']);
         $(this).find("button").text(language.about_btn_contact);
         i++;
       });

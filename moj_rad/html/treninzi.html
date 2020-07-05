@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/treninzi.css">
 
-    <script src="../js/waitForEl.js"></script>
+    
     <script src="../js/language.js"></script>
 
     <title>NonStop Treninzi</title>
@@ -96,12 +96,17 @@
     <footer></footer>
 
     <script>
-        function translatePage(language){
+
+        $().ready(function () {
+            getHeaderAndFooter();
+        });
+
+        function translatePage(language) {
             let names = ["yoga", "core", "pilates", "cardio"];
-            for(let i = 0; i < names.length; i++){
-                $('main .workout-desc').each(function(){
-                    $(this).find('h3').text(language['training_page_'+names[i]+'_title']);
-                    $(this).find('p').text(language['training_page_'+names[i]+'_desc']);
+            for (let i = 0; i < names.length; i++) {
+                $('main .workout-desc').each(function () {
+                    $(this).find('h3').text(language['training_page_' + names[i] + '_title']);
+                    $(this).find('p').text(language['training_page_' + names[i] + '_desc']);
                     i++;
                 });
             }

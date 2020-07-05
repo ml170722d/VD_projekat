@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
 
-    <script src="../js/waitForEl.js"></script>
+    
     <script src="../js/language.js"></script>
 </head>
 
@@ -91,6 +91,9 @@
     </div>
 
     <script>
+        $().ready(function () {
+            getHeaderAndFooter();
+        });
         function translatePage(language){
             $('head title').text(language.my_account_title);
             $('table button').text(language.my_account_btn_cancel);
