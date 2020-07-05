@@ -121,7 +121,8 @@
     "head_myAcc": "NonStop  Moj nalog",
 
     "aboutUs_tite": "O nama",
-    "aboutUs_text": "Some text about who we are and what we do. Non Stop Fitnes organizuje više od 30 različitih grupnih treninga u preko 120 termina nedeljno na svim lokacijama. Svi grupni treninzi su uključeni u redovnu članarinu, nikakva doplata nije potrebna. Treniraj sve od Joge do Power Box-a, od Pilatesa do Dance Fitness-a. Sve treninge vode stručni treneri Non Stop Fitness-a sa višegodišnjim iskustvom u oblasti fitnesa.",
+    "aboutUs_text": "Non Stop Fitnes organizuje više od 30 različitih grupnih treninga u preko 120 termina nedeljno na svim lokacijama. Svi grupni treninzi su uključeni u redovnu članarinu, nikakva doplata nije potrebna. Treniraj sve od Joge do Power Box-a, od Pilatesa do Dance Fitness-a. Sve treninge vode stručni treneri Non Stop Fitness-a sa višegodišnjim iskustvom u oblasti fitnesa.",
+    "aboutUs_text2":"Funkcionalnost kluba se ogleda u opremljenosti samog prostora, trenerima i pruženoj usluzi. U skladu sa ovim, sva 4 fitness studija raspolažu sa moderno dizajniranim enterijerom, ventilacijom, klimatizacijom, prijemnim delom, sportskim suplementima, svlačionicama sa ormarićima za garderobu, tuš kabinama, aerobik salom, profesionalnom Technogym Cardio i Strenght opremom i izuzetno prihvatljivim članarinama.",
     "aboutUs_contact_title":"Kontakt",
 
     "about_dev_1_p_1":"Sef i Osnivac",
@@ -129,6 +130,18 @@
     "about_dev_2_p_1":"Dizajner",
     "about_dev_2_p_2":"Student treće godine Elektrotehničkog fakulteta u Beogradu, smer Softverski inženjer",
     "about_btn_contact":"Kontakt",
+    "about_our_team":"Naš Tim",
+
+    "my_account_title":"Moj nalog",
+    "my_account_btn_cancel":"Otkaži",
+
+    "training_table_monday":"Pon",
+    "training_table_tuesday":"Uto",
+    "training_table_wednesday":"Sre",
+    "training_table_thursday":"Cet",
+    "training_table_friday":"Pet",
+    "training_table_saturday":"Sub",
+    "training_table_sunday":"Ned",
 
     "trainingScheduling_title": "Zakazivanje treninga",
     "btn_reserve": "Rezervisi"

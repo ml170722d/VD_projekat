@@ -46,13 +46,13 @@
                     <table class="table" style="width: 100%; border: 1px; background-color: white;" id="tabletime">
                         <tr>
                             <td id="0,0"></td>
-                            <td id="0,1">Pon</td>
-                            <td id="0,2">Uto</td>
-                            <td id="0,3">Sre</td>
-                            <td id="0,4">Cet</td>
-                            <td id="0,5">Pet</td>
-                            <td id="0,6">Sub</td>
-                            <td id="0,7">Ned</td>
+                            <td id="0,1" class="Pon">Pon</td>
+                            <td id="0,2" class="Uto">Uto</td>
+                            <td id="0,3" class="Sre">Sre</td>
+                            <td id="0,4" class="Cet">Cet</td>
+                            <td id="0,5" class="Pet">Pet</td>
+                            <td id="0,6" class="Sub">Sub</td>
+                            <td id="0,7" class="Ned">Ned</td>
                         </tr>
                         <tr>
                             <td id="1,0">10-11</td>
@@ -163,7 +163,14 @@
     <script>
         function translatePage(language){
             $('head title').text(language.trainingScheduling_title);
-            //$('td button').text(language.btn_reserve);
+            $('.Pon').text(language.training_table_monday);
+            $('.Uto').text(language.training_table_tuesday);
+            $('.Sre').text(language.training_table_wednesday);
+            $('.Cet').text(language.training_table_thursday);
+            $('.Pet').text(language.training_table_friday);
+            $('.Sub').text(language.training_table_saturday);
+            $('.Ned').text(language.training_table_sunday);
+            
             $('td button').each(function(){
                 let temp = $(this).text().split(' ')[1];
                 $(this).text(language.btn_reserve+ " " + temp);

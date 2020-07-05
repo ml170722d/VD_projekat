@@ -38,13 +38,14 @@
     <main>
       <div class="about-section">
         <h1></h1>
-        <p id="txt"></p>
+        <p id="txt2"></p>
+        <p id="txt1"></p>
         <h2></h2>
         <p><a href="tel:+38162570434">+38162570434</a></p>
       </div>
 
       <div class="row">
-        <h2 class="col-sm-2 offset-sm-5" style="text-align: center">Naš tim</h2>
+        <h2 class="col-sm-2 offset-sm-5" style="text-align: center" id="naslov_nas_tim">Naš tim</h2>
         <div class="row" style="text-align:center">
           <div class="col-sm-6">
             <div class="card">
@@ -89,9 +90,11 @@
       $('head title').text(language.head_aboutUs);
       $('main .about-section').each(function(){
         $(this).find('h1').text(language.aboutUs_tite);
-        $(this).find('#txt').text(language.aboutUs_text);
+        $(this).find('#txt1').text(language.aboutUs_text);
+        $(this).find('#txt2').text(language.aboutUs_text2);
         $(this).find('h2').text(language.aboutUs_contact_title);
       });
+      $('#naslov_nas_tim').text(language.about_our_team);
       let i = 1;
       $('.card').each(function(){
         $(this).find('.title').text(language['about_dev_'+i+'_p_1']);

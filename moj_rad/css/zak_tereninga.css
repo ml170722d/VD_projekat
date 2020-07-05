@@ -23,13 +23,6 @@ main #col_3{
     background-image: url("../images/jnana_yoga1.jpg");
 }
 
-main #tabletime .btn1{
-    vertical-align: top;
-}
-main #tabletime .btn2{
-    vertical-align: bottom;
-}
-
 main #tabletime{
     text-align: center;
     vertical-align: middle;
@@ -40,7 +33,7 @@ main #tabletime td{
     width: 12.5%;
 }
 main #tabletime tr{
-    width: 100px;
+    height: 9%;
 }
 
 main #naziv_treninga{

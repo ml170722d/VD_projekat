@@ -11,8 +11,11 @@ function insertStarsToItem(sratContainer){
                 $(this).click(function (e) {
 
                     leaveMark(this);
+
                 
                 });
+                
+                $(this).val()
             });
         });
 
@@ -41,11 +44,9 @@ function leaveMark(input, event) {
             if (obj_pris[i].status == 1) {
                 oceni(obj_pris[i], $(input).attr('value'));
                 $(input).parent().parent().next().find('span').text(obj_pris[i].pros_ocena);
-
             } else {
                 $(input).prop('checked', false);
                 alert("Niste pisustvovali ovom treningu");
-
             }
             break;
         }

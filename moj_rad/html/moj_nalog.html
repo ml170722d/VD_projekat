@@ -92,7 +92,15 @@
 
     <script>
         function translatePage(language){
-          
+            $('head title').text(language.my_account_title);
+            $('table button').text(language.my_account_btn_cancel);
+            $('.Pon').text(language.training_table_monday);
+            $('.Uto').text(language.training_table_tuesday);
+            $('.Sre').text(language.training_table_wednesday);
+            $('.Cet').text(language.training_table_thursday);
+            $('.Pet').text(language.training_table_friday);
+            $('.Sub').text(language.training_table_saturday);
+            $('.Ned').text(language.training_table_sunday);
         }
       </script>
 </body>

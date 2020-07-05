@@ -74,10 +74,7 @@ function loadTabelaTreninga(){
                 if(poc-h<=0){
                     if(obj_tren[i].br_mesta>0){
                         polje.style.backgroundColor = "green";
-                        /*if(localStorage.getItem("language")=="en"){
-                            polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")' >Reserve ("+obj_tren[i].br_mesta+")</button>";
-                        }else*/
-                            polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")' >Rezervisi ("+obj_tren[i].br_mesta+")</button>";
+                        polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")' >Rezervisi ("+obj_tren[i].br_mesta+")</button>";
                     }else{
                         polje.style.backgroundColor = "red";
                         polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
@@ -88,16 +85,10 @@ function loadTabelaTreninga(){
             
             if(obj_tren[i].br_mesta>0){
                 polje.style.backgroundColor = "green";
-                /*if(localStorage.getItem("language")=="en"){
-                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")'>Reserve ("+obj_tren[i].br_mesta+")</button>";
-                }else*/
-                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")'>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
+                polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")'>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
             }else{
                 polje.style.backgroundColor = "red";
-                /*if(localStorage.getItem("language")=="en"){
-                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Reserve ("+obj_tren[i].br_mesta+")</button>";
-                }else*/
-                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
+                polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
             }
         }
     }
@@ -163,6 +154,8 @@ function loadMojNalog(){
             var td3 = document.createElement('td');
             var td4 = document.createElement('td');
 
+            td1.className = obj_rez_tren[i].dan;
+
             var poc = parseInt(obj_rez_tren[i].vreme.substr(0,2));
             var kraj = obj_rez_tren[i].vreme.substr(2,5);
 
@@ -188,25 +181,25 @@ function loadMojNalog(){
             tr.appendChild(td3);
 
             let dan;
-            if(obj_rez_tren[i].dan=="Pon"){
+            if(obj_rez_tren[i].dan=="Pon" || obj_rez_tren[i].dan=="Mon"){
                 dan=1;
             }
-            if(obj_rez_tren[i].dan=="Uto"){
+            if(obj_rez_tren[i].dan=="Uto" || obj_rez_tren[i].dan=="Tue"){
                 dan=2;
             }
-            if(obj_rez_tren[i].dan=="Sre"){
+            if(obj_rez_tren[i].dan=="Sre" || obj_rez_tren[i].dan=="Wed"){
                 dan=3;
             }
-            if(obj_rez_tren[i].dan=="Cet"){
+            if(obj_rez_tren[i].dan=="Cet" || obj_rez_tren[i].dan=="Thu"){
                 dan=4;
             }
-            if(obj_rez_tren[i].dan=="Pet"){
+            if(obj_rez_tren[i].dan=="Pet" || obj_rez_tren[i].dan=="Fri"){
                 dan=5;
             }
-            if(obj_rez_tren[i].dan=="Sub"){
+            if(obj_rez_tren[i].dan=="Sub" || obj_rez_tren[i].dan=="Sat"){
                 dan=6;
             }
-            if(obj_rez_tren[i].dan=="Ned"){
+            if(obj_rez_tren[i].dan=="Ned" || obj_rez_tren[i].dan=="Sun"){
                 dan=0;
             }
             if(dan==day){

@@ -119,7 +119,8 @@
     "head_myAcc": "NonStop  My account",
 
     "aboutUs_tite": "About us",
-    "aboutUs_text": "Some text about who we are and what we do. Non Stop Fitness organizes more than 30 different group workouts in over 120 sessions per week at all locations. All group trainings are included in the regular membership fee, no additional payment is required. Train everything from Yoga to Power Box, from Pilates to Dance Fitness. All trainings are led by professional trainers of Non Stop Fitness with many years of experience in the field of fitness.",
+    "aboutUs_text": "Non Stop Fitness organizes more than 30 different group workouts in over 120 sessions per week at all locations. All group trainings are included in the regular membership fee, no additional payment is required. Train everything from Yoga to Power Box, from Pilates to Dance Fitness. All trainings are led by professional trainers of Non Stop Fitness with many years of experience in the field of fitness.",
+    "aboutUs_text2":"The functionality of the club is reflected in the equipment of the space itself, the coaches and the service provided. In accordance with this, all 4 fitness studios have a modernly designed interior, ventilation, air conditioning, reception area, sports supplements, locker rooms with lockers, showers, aerobics room, professional Technogym Cardio and Strenght equipment and extremely acceptable membership fees.",
     "aboutUs_contact_title":"Contact",
     
     "about_dev_1_p_1":"CEO & Founder",
@@ -127,6 +128,18 @@
     "about_dev_2_p_1":"Art Designer",
     "about_dev_2_p_2":"Third year student of the Faculty of Electrical Engineering in Belgrade, majoring in Software Engineering",
     "about_btn_contact":"Contact",
+    "about_our_team":"Our Team",
+
+    "my_account_title":"My account",
+    "my_account_btn_cancel":"Cancel",
+
+    "training_table_monday":"Mon",
+    "training_table_tuesday":"Tue",
+    "training_table_wednesday":"Wed",
+    "training_table_thursday":"Thu",
+    "training_table_friday":"Fri",
+    "training_table_saturday":"Sat",
+    "training_table_sunday":"Sun",
 
     "trainingScheduling_title": "Training scheduling",
     "btn_reserve": "Reserve",
