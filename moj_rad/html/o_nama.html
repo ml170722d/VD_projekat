@@ -96,6 +96,7 @@
       $('.card').each(function(){
         $(this).find('.title').text(language['about_dev_'+i+'_p_1']);
         $(this).find('.title').next().text(language['about_dev_'+i+'_p_2']);
+        $(this).find("button").text(language.about_btn_contact);
         i++;
       });
     }

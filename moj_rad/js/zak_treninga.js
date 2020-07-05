@@ -74,7 +74,10 @@ function loadTabelaTreninga(){
                 if(poc-h<=0){
                     if(obj_tren[i].br_mesta>0){
                         polje.style.backgroundColor = "green";
-                        polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")' >Rezervisi ("+obj_tren[i].br_mesta+")</button>";
+                        /*if(localStorage.getItem("language")=="en"){
+                            polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")' >Reserve ("+obj_tren[i].br_mesta+")</button>";
+                        }else*/
+                            polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")' >Rezervisi ("+obj_tren[i].br_mesta+")</button>";
                     }else{
                         polje.style.backgroundColor = "red";
                         polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
@@ -85,10 +88,16 @@ function loadTabelaTreninga(){
             
             if(obj_tren[i].br_mesta>0){
                 polje.style.backgroundColor = "green";
-                polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")'>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
+                /*if(localStorage.getItem("language")=="en"){
+                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")'>Reserve ("+obj_tren[i].br_mesta+")</button>";
+                }else*/
+                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' onclick='rezervisi("+obj_tren[i].lok[0]+","+obj_tren[i].lok[1]+")'>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
             }else{
                 polje.style.backgroundColor = "red";
-                polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
+                /*if(localStorage.getItem("language")=="en"){
+                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Reserve ("+obj_tren[i].br_mesta+")</button>";
+                }else*/
+                    polje.innerHTML = "<button class='btn btn-outline-light btn-block btn2' disabled>Rezervisi ("+obj_tren[i].br_mesta+")</button>";
             }
         }
     }

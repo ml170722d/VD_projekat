@@ -160,6 +160,16 @@
         </main>
         <footer></footer>
     </div>
+    <script>
+        function translatePage(language){
+            $('head title').text(language.trainingScheduling_title);
+            //$('td button').text(language.btn_reserve);
+            $('td button').each(function(){
+                let temp = $(this).text().split(' ')[1];
+                $(this).text(language.btn_reserve+ " " + temp);
+            });
+        }
+    </script>
 </body>
 
 </html>
